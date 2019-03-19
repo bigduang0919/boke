@@ -56,7 +56,7 @@ public interface BbsDao {
 	@Select("SELECT Btname from bbstype where parentid = #{param1}")
 	public List<Bbstype> querytypeTwo(Integer parentid);
 	/**
-	 * 根据论坛id查询技术问题
+	 * 根据论坛bbsid查询技术问题
 	 * @param userid
 	 * @return
 	 */

@@ -9,7 +9,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.cjt.entity.Bbstype;
+
 import com.cjt.service.BbstypeService;
 
 @Controller
