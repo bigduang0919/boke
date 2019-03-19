@@ -1,0 +1,3 @@
+eclipse.preferences.version=1
+validator.Checked=src/main/resources/templates/Bbspost.html,src/main/resources/templates/bbs.html,pom.xml,src/main/resources/templates/test.html,src/main/resources/templates/Test1.html
+validator.Unchecked=
