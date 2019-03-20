@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- saved from url=(0026)https://download.csdn.net/ -->
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="baidu-site-verification" content="0ZEYmMYLRD">
@@ -14,54 +14,43 @@
 	content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link rel="apple-touch-icon"
 	href="https://csdnimg.cn/public/favicon.ico">
-<script type="text/javascript" async="" src="files/auto_dup"></script>
-<script src="files/hm.js.下载"></script>
-<script type="text/javascript" src="files/tingyun-rum-download.js.下载"></script>
+<script type="text/javascript" async="" src="/tribune/static/files/auto_dup"></script>
+<script src="/tribune/static/files/hm.js.下载"></script>
+<script type="text/javascript" src="/tribune/static/files/tingyun-rum-download.js.下载"></script>
 <script type="text/javascript">
-            var dl_cdn_url = '//csdnimg.cn/release/download';
-            var dl_cdn_version = '201812141441';
-        </script>
+	var dl_cdn_url = '//csdnimg.cn/release/download';
+	var dl_cdn_version = '201812141441';
+</script>
 
-<link rel="stylesheet" href="files/download_new.css">
+<link rel="stylesheet" href="/tribune/static/files/download_new.css">
 
-<link rel="stylesheet" href="files/content_toolbar.css">
-<link rel="stylesheet" href="files/bootstrap.css">
-<link rel="stylesheet" href="files/common.css">
+<link rel="stylesheet" href="/tribune/static/files/content_toolbar.css">
+<link rel="stylesheet" href="/tribune/static/files/bootstrap.css">
+<link rel="stylesheet" href="/tribune/static/files/common.css">
 <link href="https://csdnimg.cn/public/favicon.ico" rel="SHORTCUT ICON">
-<link href="files/quake.slider.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="files/font-awesome.min.css">
-<script src="files/libs.js.下载" type="text/javascript"></script>
-<script src="files/sigleMin.js.下载" type="text/javascript"></script>
-<!--<script src="/js/sigleApps/animateBackground-plugin.js?/v=" type="text/javascript"></script>-->
-<!--<link rel="stylesheet" href="/css/iconfont.css?/v=">-->
-<link rel="stylesheet" href="files/download_index.css">
+<link href="/tribune/static/files/quake.slider.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="/tribune/static/files/font-awesome.min.css">
+<script src="/tribune/static/files/libs.js.下载" type="text/javascript"></script>
+<link rel="stylesheet" href="/tribune/static/files/download_index.css">
 <link rel="canonical" href="http://download.csdn.net/">
-<link rel="stylesheet" type="text/css" href="files/goTop.min.css">
+<link rel="stylesheet" type="text/css" href="/tribune/static/files/goTop.min.css">
 <script type="text/javascript" charset="utf-8"
-	src="files/tracking-1.0.2.js.下载"></script>
-<script type="text/javascript" charset="utf-8"
-	src="files/main-1.0.2.js.下载"></script>
-<script type="text/javascript" src="files/check-adb.js.下载"></script>
-<script type="text/javascript" src="files/baidu_opensug-1.0.0.js.下载"></script>
-<script src="files/get_ads.php" type="text/javascript"></script>
-<link rel="stylesheet" type="text/css" href="files/check-adb.css">
-<script type="text/javascript" src="files/fuckadblock.min.js.下载"></script>
-<style type="text/css"></style>
-<style type="text/css"></style>
-<style type="text/css"></style>
-<style type="text/css"></style>
-<style type="text/css"></style>
-<style type="text/css"></style>
-<style type="text/css"></style>
-<style type="text/css"></style>
-<style type="text/css"></style>
-<style type="text/css"></style>
-<style type="text/css"></style>
+	src="/tribune/static/files/tracking-1.0.2.js.下载"></script>
+<!-- <script type="text/javascript" charset="utf-8"
+	src="/tribune/static/files/main-1.0.2.js.下载"></script>
+<script type="text/javascript" src="/tribune/static/files/check-adb.js.下载"></script>
+<script type="text/javascript" src="/tribune/static/files/baidu_opensug-1.0.0.js.下载"></script> -->
+<script src="/tribune/static/files/get_ads.php" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="/tribune/static/files/check-adb.css">
+<script type="text/javascript" src="/tribune/static/files/fuckadblock.min.js.下载"></script>
+<style type="text/css">
+	.seled{background-color: lightgray;text-decoration: none;}
+</style>
 </head>
 <body>
 	<div id="BAIDU_DUP_fp_wrapper"
 		style="position: absolute; left: -1px; bottom: -1px; z-index: 0; width: 0px; height: 0px; overflow: hidden; visibility: hidden; display: none;">
-		<iframe id="BAIDU_DUP_fp_iframe" src="files/o.html"
+		<iframe id="BAIDU_DUP_fp_iframe" src="/tribune/static/files/o.html"
 			style="width: 0px; height: 0px; visibility: hidden; display: none;"></iframe>
 	</div>
 	<svg aria-hidden="true"
@@ -1812,28 +1801,9 @@
 					title="首页" style="margin-left:0">首页</a></li>
 				<li><a href="https://blog.csdn.net/" class="toolbar_to_feed"
 					title="博客">博客</a></li>
-				<li><a href="https://edu.csdn.net/" title="学院">学院</a></li>
-				<li><a href="https://download.csdn.net/" title="下载"
+				<li><a th:href="@{/downfilec/queryDownFile}" title="下载"
 					class="active">下载</a></li>
-				<li><a href="https://gitchat.csdn.net/?utm_source=csdn_toolbar"
-					title="图文课">图文课</a></li>
 				<li><a href="https://bbs.csdn.net/" title="论坛">论坛</a></li>
-				<li class="app-btn"><a href="https://www.csdn.net/app/"
-					title="APP">APP</a>
-					<div class="appControl">
-						<span> <img src="files/csdnqr@2x.png"> <em>CSDN</em>
-						</span> <span class="eduwx"> <img src="files/eduwxfix.png">
-							<em>CSDN学院</em>
-						</span>
-					</div></li>
-				<li><a href="https://ask.csdn.net/" title="问答">问答</a></li>
-				<li><a href="https://mall.csdn.net/" title="商城">商城</a></li>
-				<li class="vip-caise"><a href="https://mall.csdn.net/vip_code"
-					title="VIP会员">VIP会员</a></li>
-				<li><a href="https://huiyi.csdn.net/" title="活动">活动</a></li>
-				<li><a href="http://job.csdn.net/" title="招聘">招聘</a></li>
-				<li><a href="http://www.iteye.com/" title="ITeye">ITeye</a></li>
-				<li><a href="https://gitbook.cn/?ref=csdn" title="GitChat">GitChat</a></li>
 			</ul>
 			<div class="pull-right login-wrap ">
 				<ul class="btns">
@@ -1859,21 +1829,16 @@
 								<use xlink:href="#xieboke1"></use></svg><span>写博客</span></a>
 						<div class="blog_tip_box" style="display: block;">快来写博客吧
 							ヽ(✿ﾟ▽ﾟ)ノ</div></li>
-					<li class="gitChat"><a class=""
-						href="https://gitbook.cn/new/gitchat/activity?utm_source=csdnblog1"
-						target="_blank"><img src="files/money.png" alt=""
-							class="money"><span>赚零钱</span></a></li>
 					<li class="gitChat upload msgBox" id="msgBox"><a
 						target="_blank" class="" href="https://i.csdn.net/#/msg/index"><img
-							src="files/message-icon.png" alt="" class="message"><span>消息</span>
-						<div class="toolbar-circle" id="msg-circle"></div></a>
+							src="/tribune/static/files/message-icon.png" alt="" class="message"><span>消息</span>
+							<div class="toolbar-circle" id="msg-circle"></div></a>
 						<div class="msgList" id="msgList">
 							<a href="https://i.csdn.net/#/msg/index">评论<em
 								class="comment"></em></a> <a
 								href="https://i.csdn.net/#/msg/attention">关注<em
 								class="follow"></em></a> <a href="https://i.csdn.net/#/msg/like">点赞<em
-								class="thumb_up"></em></a> <a href="https://i.csdn.net/#/msg/answer">回答<em
-								class="invitation"></em></a> <a
+								class="thumb_up"></em></a> <a
 								href="https://i.csdn.net/#/msg/notice">系统通知<em
 								class="system"></em></a>
 						</div></li>
@@ -1883,7 +1848,7 @@
 					<li class="userLogin">
 						<div class="loginCenter">
 							<a href="https://i.csdn.net/" target="_blank"><img
-								class="login_img" src="files/2_qq_41594083"></a>
+								class="login_img" src="/tribune/static/files/2_qq_41594083"></a>
 						</div>
 						<div class="userControl">
 							<div class="bord">
@@ -1949,347 +1914,76 @@
 			</div>
 		</div>
 	</div>
-
-	<script src="files/goTop-v1.0.min.js.下载"></script>
-
-	<!--<ins data-revive-zoneid="149" data-revive-id="8c38e720de1c90a6f6ff52f3f89c4d57"></ins>-->
-
-	<script type="text/javascript" src="files/content_toolbar.js.下载"></script>
-	<script src="files/notify.js.下载"></script>
-	<script src="files/main.js.下载"></script>
-	<script class="toolbar-s" type="text/javascript"
-		src="files/iconfont.js.下载"></script>
+	
+	<script type="text/javascript" src="/tribune/static/files/content_toolbar.js.下载"></script>
+	<script src="/tribune/static/files/notify.js.下载"></script>
+	<script src="/tribune/static/files/main.js.下载"></script>
+	<script class="toolbar-s" type="text/javascript" src="/tribune/static/files/iconfont.js.下载"></script>
 
 
 	<div class="news-nav">
 		<div class="container clearfix">
 			<div class="nav-bar">
-				<a href="https://download.csdn.net/" class="current">下载首页</a> <a
-					class=" " href="https://download.csdn.net/album">精品专辑</a>
-
-				<!-- <a href="https://download.csdn.net/help" >帮助</a> -->
-				<!--<a href="https://download.csdn.net/advanced_search" >高级搜索</a>  -->
-				<a href="https://download.csdn.net/my">我的资源</a> <a
-					class="nav_upload  " href="https://download.csdn.net/upload">上传资源赚积分</a>
-
-				<a class=" " href="https://download.csdn.net/my/downloads">已下载</a> <a
-					class=" " href="https://download.csdn.net/my/favs">我的收藏</a>
-			</div>
-			<div class="search-download">
-				<a href="https://download.csdn.net/help" class="help"><i
-					class="fa fa-question-circle"></i>下载帮助</a>
+				<a th:href="@{/downfilec/queryDownFile}" class="current">下载首页</a>
+				<a th:href="@{/downfilec/myResources(userid='S111')}">我的资源</a> 
+				<a class="nav_upload  " th:href="@{/downtypec/queryTypeAll}">上传资源赚积分</a>
+				<a class=" " href="https://download.csdn.net/my/favs">我的收藏</a>
 			</div>
 		</div>
 	</div>
 	<!-- //toolbar nav -->
-
-
-
-
-	<script src="files/ds.js.下载"></script>
-
 	<div class="home_page_wrap">
-		<div class="right_bottom_ads">
-			<div id="kp_box_460" data-pid="460"
-				data-track-view="{&quot;mod&quot;:&quot;kp_popu_460-669&quot;,&quot;con&quot;:&quot;,,&quot;}">
-				<script src="files/indexSuperise.js.下载"></script>
-				<script>
- window.csdn.indexSuperise({
-      smallMoveImg: '//ubmcmm.baidustatic.com/media/v1/0f000Kc2zy2iZRRQTXNc3f.png',
-      bigMoveImg: '//ubmcmm.baidustatic.com/media/v1/0f000PCe-4Lh4WBnufB8ks.png',
-     link:'//mall.csdn.net/vip_code?utm_source=hpvip',
-trackSuperId:460,
-      trackSId: 669,
-    });
-</script>
-				<div class="indexSuperise" style="bottom: 127.5px;">
-					<div class="light-box">
-						<a href="https://mall.csdn.net/vip_code?utm_source=hpvip"
-							target="_blank"
-							data-track-click="{&quot;mod&quot;:&quot;kp_popu_460-669&quot;,&quot;con&quot;:&quot;,//mall.csdn.net/vip_code?utm_source=hpvip,-&quot;}">
-							<img src="files/0f000Kc2zy2iZRRQTXNc3f.png" alt="" class="">
-						</a>
-					</div>
-					<div class="showBig animated bounceInRight">
-						<div class="pos-box">
-							<svg t="1540286119506" class="icon btn-close-adddd"
-								style="width: 14px; height: 14px; fill: currentcolor; overflow: hidden;"
-								viewBox="0 0 1024 1024" version="1.1"
-								xmlns="http://www.w3.org/2000/svg" p-id="6698">
-								<path
-									d="M512 438.378667L806.506667 143.893333a52.032 52.032 0 1 1 73.6 73.621334L585.621333 512l294.485334 294.485333a52.074667 52.074667 0 0 1-73.6 73.642667L512 585.621333 217.514667 880.128a52.053333 52.053333 0 1 1-73.621334-73.642667L438.378667 512 143.893333 217.514667a52.053333 52.053333 0 1 1 73.621334-73.621334L512 438.378667z"
-									fill="#ffffff" p-id="6699"></path></svg>
-							<a href="https://mall.csdn.net/vip_code?utm_source=hpvip"
-								target="_blank"
-								data-track-click="{&quot;mod&quot;:&quot;kp_popu_460-669&quot;,&quot;con&quot;:&quot;,//mall.csdn.net/vip_code?utm_source=hpvip,-&quot;}">
-								<img src="files/0f000PCe-4Lh4WBnufB8ks.png" alt="">
-							</a>
-						</div>
-					</div>
-					<button class="btn-close-ad">关闭</button>
-				</div>
-			</div>
-		</div>
-		<input id="is_login" type="hidden" value="true">
-		<div class="home_banner" style="display: none;">
-			<div class="container ban_content">
-				<span class="conclusion_shows">累计发布<span
-					class="download_number"><i
-						style="background-position: 0px -280px;"></i><em>,</em><i
-						style="background-position: 0px -80px;"></i><i
-						style="background-position: 0px -160px;"></i><i
-						style="background-position: 0px -280px;"></i><em>,</em><i
-						style="background-position: 0px -240px;"></i><i
-						style="background-position: 0px -240px;"></i><i
-						style="background-position: 0px -320px;"></i></span>条资源 <input
-					id="cur_num" type="hidden" value="7247668"></span>
-
-				<div class="advanced_search">
-					<div class="dropdownContainer" id="technicalfield">
-						<div isdrop="true" bate-id="0" class="dropdownDefault category">技术领域</div>
-						<i class="fa fa-angle-down sel_icon"></i>
-						<!-- 大类开始 -->
-						<div class="dropdrown_menu category-1">
-							<span bate-id="0"><a href="javascript:;">全部</a></span>
-							<div class="dropdrown_menu_con clearfix">
-								<ul class="dropdrown_menu_list">
-									<li bate-id="21"><a href="javascript:;">移动开发</a></li>
-									<li bate-id="16"><a href="javascript:;">开发技术</a></li>
-									<li bate-id="15"><a href="javascript:;">课程资源</a></li>
-									<li bate-id="19"><a href="javascript:;">网络技术</a></li>
-									<li bate-id="12"><a href="javascript:;">操作系统</a></li>
-								</ul>
-								<ul class="dropdrown_menu_list">
-									<li bate-id="10"><a href="javascript:;">安全技术</a></li>
-									<li bate-id="18"><a href="javascript:;">数据库</a></li>
-									<li bate-id="14"><a href="javascript:;">行业</a></li>
-									<li bate-id="13"><a href="javascript:;">服务器应用</a></li>
-									<li bate-id="11"><a href="javascript:;">存储</a></li>
-								</ul>
-								<ul class="dropdrown_menu_list">
-									<li bate-id="20"><a href="javascript:;">信息化</a></li>
-									<li bate-id="17"><a href="javascript:;">考试认证</a></li>
-									<li bate-id="22"><a href="javascript:;">云计算</a></li>
-									<li bate-id="23"><a href="javascript:;">大数据</a></li>
-									<li bate-id="24"><a href="javascript:;">跨平台</a></li>
-								</ul>
-								<ul class="dropdrown_menu_list">
-									<li bate-id="25"><a href="javascript:;">音视频</a></li>
-									<li bate-id="26"><a href="javascript:;">游戏开发</a></li>
-									<li bate-id="27"><a href="javascript:;">人工智能</a></li>
-									<li bate-id="28"><a href="javascript:;">区块链</a></li>
-								</ul>
-							</div>
-						</div>
-						<!-- 结束 -->
-
-					</div>
-					<div class="dropdownContainer" id="resourcetype">
-						<div isdrop="true" bate-id="0" class="dropdownDefault sourcetype">资源类型</div>
-						<i class="fa fa-angle-down sel_icon"></i>
-
-						<!-- 小类开始 -->
-						<!-- 全部 10   文档类：1 工具类：3  代码类：2  其他：4 -->
-						<div class="dropdrown_menu category-2">
-							<span bate-id="10" class="all"><a href="javascript:;">全部</a></span>
-							<div class="dropdrown_menu_con clearfix">
-								<ul class="dropdrown_menu_list">
-									<li bate-id="1"><a href="javascript:;">文档类</a></li>
-									<li bate-id="3"><a href="javascript:;">工具类</a></li>
-									<li bate-id="2"><a href="javascript:;">代码类</a></li>
-									<li bate-id="4"><a href="javascript:;">其他</a></li>
-								</ul>
-							</div>
-						</div>
-						<!-- 小类结束 -->
-
-					</div>
-				</div>
-				<div class="recommended_keywords">
-					<span class="keywords_items">推荐关键字: <!-- 推荐关键词开始 --> <a
-						href="https://download.csdn.net/search?keywords=C++"
-						target="_blank"> C++</a> <!-- <em>PHP</em><em>JavaScript</em><em>PPT</em>-->
-						<a href="https://download.csdn.net/search?keywords=PHP"
-						target="_blank"> PHP</a> <!-- <em>PHP</em><em>JavaScript</em><em>PPT</em>-->
-						<a href="https://download.csdn.net/search?keywords=Android"
-						target="_blank"> Android</a> <!-- <em>PHP</em><em>JavaScript</em><em>PPT</em>-->
-						<a href="https://download.csdn.net/search?keywords=Python"
-						target="_blank"> Python</a> <!-- <em>PHP</em><em>JavaScript</em><em>PPT</em>-->
-						<!-- 推荐关键词结束 -->
-					</span>
-				</div>
-				<!-- 公告开始 -->
-
-				<ul class="announcement_list clearfix">
-					<li class="announcement_item"><a target="_blank"
-						href="http://bbs.csdn.net/topics/392285451"> <i
-							class="fa fa-chevron-circle-right"></i> CSDN下载频道资源及相关规则调整公告V11.10
-					</a></li>
-					<li class="announcement_item"><a target="_blank"
-						href="http://bbs.csdn.net/forums/DownloadQuestion"> <i
-							class="fa fa-chevron-circle-right"></i> 下载频道用户反馈专区
-					</a></li>
-					<li class="announcement_item"><a target="_blank"
-						href="http://bbs.csdn.net/topics/392275720"> <i
-							class="fa fa-chevron-circle-right"></i> 下载频道积分规则调整V1710.18
-					</a></li>
-				</ul>
-				<!-- 公告结束 -->
-			</div>
-		</div>
 		<div class="container main">
-
 			<div class="main_l fl" style="margin-top: 0;">
 				<div class="dl_wrap">
-					<dl class="cate_sea_list clearfix">
+					<dl class="cate_sea_list clearfix" id="downtype">
 						<dt>技术领域：</dt>
 						<dd>
 							<ul class="cate_list" id="categoryid1">
-								<li bate-id="categoryall" class="cate_cur"><a
-									href="https://download.csdn.net/search/0/10/0/0/1"> 全部 </a></li>
-
-								<li bate-id="21"><a
-									href="https://download.csdn.net/search/21/10/0/0/1"> 移动开发 </a>
+								<li bate-id="categoryall" class="cate_cur">
+                                	<a href="javascript:void(0);">全部</a>
+                            	</li>
+								<li th:each="list:${querytype}" style="height:28px;line-heiht:28px;">
+									<a href="javascript:void(0);" th:text="${list.downtypeName}"></a>
 								</li>
-								<li bate-id="16"><a
-									href="https://download.csdn.net/search/16/10/0/0/1"> 开发技术 </a>
-								</li>
-								<li bate-id="15"><a
-									href="https://download.csdn.net/search/15/10/0/0/1"> 课程资源 </a>
-								</li>
-								<li bate-id="19"><a
-									href="https://download.csdn.net/search/19/10/0/0/1"> 网络技术 </a>
-								</li>
-								<li bate-id="12"><a
-									href="https://download.csdn.net/search/12/10/0/0/1"> 操作系统 </a>
-								</li>
-								<li bate-id="10"><a
-									href="https://download.csdn.net/search/10/10/0/0/1"> 安全技术 </a>
-								</li>
-								<li bate-id="18"><a
-									href="https://download.csdn.net/search/18/10/0/0/1"> 数据库 </a></li>
-								<li bate-id="14"><a
-									href="https://download.csdn.net/search/14/10/0/0/1"> 行业 </a></li>
-								<li bate-id="13"><a
-									href="https://download.csdn.net/search/13/10/0/0/1"> 服务器应用
-								</a></li>
-								<li bate-id="11"><a
-									href="https://download.csdn.net/search/11/10/0/0/1"> 存储 </a></li>
 							</ul>
-
-
-
-
-							<ul class="cate_list" id="categoryid2">
-								<li bate-id="20"><a
-									href="https://download.csdn.net/search/20/10/0/0/1"> 信息化 </a></li>
-
-								<li bate-id="17"><a
-									href="https://download.csdn.net/search/17/10/0/0/1"> 考试认证 </a>
-								</li>
-
-								<li bate-id="22"><a
-									href="https://download.csdn.net/search/22/10/0/0/1"> 云计算 </a></li>
-
-								<li bate-id="23"><a
-									href="https://download.csdn.net/search/23/10/0/0/1"> 大数据 </a></li>
-
-								<li bate-id="24"><a
-									href="https://download.csdn.net/search/24/10/0/0/1"> 跨平台 </a></li>
-
-								<li bate-id="25"><a
-									href="https://download.csdn.net/search/25/10/0/0/1"> 音视频 </a></li>
-
-								<li bate-id="26"><a
-									href="https://download.csdn.net/search/26/10/0/0/1"> 游戏开发 </a>
-								</li>
-
-								<li bate-id="27"><a
-									href="https://download.csdn.net/search/27/10/0/0/1"> 人工智能 </a>
-								</li>
-
-								<li bate-id="28"><a
-									href="https://download.csdn.net/search/28/10/0/0/1"> 区块链 </a></li>
-
-							</ul>
-
-
 						</dd>
 					</dl>
-
-					<dl class="cate_sea_list clearfix">
+					<dl class="cate_sea_list clearfix" id="filetype">
 						<dt>资源类型：</dt>
 						<dd id="sourcetype">
-							<label bata-id="10" class="source_item js_source cate_cur"><a
-								href="https://download.csdn.net/search/0/10/0/0/1">全部</a></label> <label
-								bata-id="1" class="source_item js_source "><a
-								href="https://download.csdn.net/search/0/1/0/0/1">文档类</a></label> <label
-								bata-id="3" class="source_item js_source "><a
-								href="https://download.csdn.net/search/0/3/0/0/1">工具类</a></label> <label
-								bata-id="2" class="source_item js_source "><a
-								href="https://download.csdn.net/search/0/2/0/0/1">代码类</a></label> <label
-								bata-id="4" class="source_item js_source "><a
-								href="https://download.csdn.net/search/0/4/0/0/1">其他</a></label>
+							<label bata-id="10" class="source_item js_source cate_cur">
+								<a href="javascript:void(0);">全部</a>
+							</label> 
+							<label bata-id="1" class="source_item js_source ">
+								<a href="javascript:void(0);">文档类</a>
+							</label> 
+							<label bata-id="3" class="source_item js_source ">
+								<a href="javascript:void(0);">工具类</a>
+							</label> 
+							<label bata-id="2" class="source_item js_source ">
+								<a href="javascript:void(0);">代码类</a>
+							</label> 
+							<label bata-id="4" class="source_item js_source ">
+								<a href="javascript:void(0);">其他</a>
+							</label>
 						</dd>
 					</dl>
-
 					<dl class="cate_sea_list clearfix">
 						<dt class="keyword_dt">关键词：</dt>
 						<dd>
-							<input type="text" class="keywords" value=""
-								onkeyup="KeyP(event);"><a
-								href="https://download.csdn.net/psearch/0/10/0/0/1"
-								id="keywords" class="cate_search">搜索</a>
+							<input type="text" class="keywords" value="" onkeyup="KeyP(event);" id="fileName">
+							<input type="button" id="keywords"  th:onclick="searchs()" value="搜索" class="cate_search">
 						</dd>
 					</dl>
 				</div>
-
-				<div class="condition clearfix" style="display: none;">
-					<span>已选条件 ： &nbsp;</span>
-					<div class="condition_wrap">
-						<label id="tech" class="condition_item"><em>全部</em></label> <label
-							class="removeAll"> <a href="javascript:;" class=""></a>
-						</label>
-
-					</div>
-				</div>
 			</div>
-
-
 			<div class="download_l main_l pull-left">
-
-				<div id="kp_box_218" data-pid="218"
-					data-track-view="{&quot;mod&quot;:&quot;kp_popu_218-375&quot;,&quot;con&quot;:&quot;,,&quot;}"
-					data-track-click="{&quot;mod&quot;:&quot;kp_popu_218-375&quot;,&quot;con&quot;:&quot;,,&quot;}">
-					<div class="J_adv" data-view="true" data-mod="ad_popu_520"
-						data-mtp="2" data-order="1055" data-con="ad_content_4947"
-						style="width: 880px; height: 90px;">
-						<div style="line-height:0px;">
-							<a target="_blank"
-								href="https://edu.csdn.net/topic/python115?utm_source=xzbanner"><img
-								width="880" height="90" src="files/201902271611383197.png"></a>
-							<div
-								style="left: 0px; width: 26px; background: transparent url(&quot;//img-ads.csdn.net/2016/201608021757063065.png&quot;) no-repeat scroll right top; height: 16px;z-index: 12; position: relative; bottom: 16px;"></div>
-						</div>
-					</div>
-					<script language="javascript" type="text/javascript"
-						src="files/async_new.js.下载"></script>
-				</div>
-				<!-- 广告位开始 -->
-				<div>
-					<ins data-revive-zoneid="237"
-						data-revive-id="8c38e720de1c90a6f6ff52f3f89c4d57" id="revive-0-1"></ins>
-				</div>
-				<!-- 广告位结束 -->
-
-
 				<div class="resouces_tab_shows tab_nav J_tabSwitch"
 					style="margin-top: 0px;">
 					<div class="tab_bar">
 						<ul class="tab_list clearfix">
-							<li class="tab_item cur" type="dm" data-href="/search/0/2/0/0/1">代码资源</li>
-							<li class="tab_item" type="zx" data-href="/search">最新上传</li>
-
+							<li class="tab_item cur" type="dm" data-href="/search/0/2/0/0/1">资源</li>
 						</ul>
 						<div class="more_info">
 							<a id="more_info_a" href="https://download.csdn.net/search"
@@ -2299,1417 +1993,45 @@ trackSuperId:460,
 					<!-- 选项卡 内容-->
 					<div class="tab_con_box">
 						<!-- 代码资源列表-->
-						<div class="tab_page tab3_con">
+						<div class="tab_page tab3_con" id="tabab">
 							<div class="album_detail_wrap">
-								<!-- 循环开始 -->
-								<!--首页推荐 3 8 14 条显示广告-->
-
-								<dl class="album_detail_list clearfix">
-									<dt>
-										<a target="_blank"
-											href="https://download.csdn.net/download/qq_41032995/10992536"><img
-											src="files/unkonw.svg" alt="img"></a>
-									</dt>
-									<dd>
-										<a target="_blank"
-											href="https://download.csdn.net/download/qq_41032995/10992536"
-											class="album_detail_title"> pdfbox jar包 </a>
-										<div class="album_detail_bot clearfix">
-											<label><span>上传者：</span> <em class="upl_name">
-													旸哥 </em> </label> <label><span>上传时间：</span><em class="upl_time">2019-03-04</em></label>
-											<strong><span class="jifen">积分/C币：</span> <em>
-													5 </em> </strong>
-
-										</div>
-									</dd>
-								</dl>
-								<!--首页推荐 3 8 14 条显示广告-->
-
-								<dl class="album_detail_list clearfix">
-									<dt>
-										<a target="_blank"
-											href="https://download.csdn.net/download/qq_41032995/10992533"><img
-											src="files/zip.svg" alt="img"></a>
-									</dt>
-									<dd>
-										<a target="_blank"
-											href="https://download.csdn.net/download/qq_41032995/10992533"
-											class="album_detail_title"> htmlunit jar包 </a>
-										<div class="album_detail_bot clearfix">
-											<label><span>上传者：</span> <em class="upl_name">
-													旸哥 </em> </label> <label><span>上传时间：</span><em class="upl_time">2019-03-04</em></label>
-											<strong><span class="jifen">积分/C币：</span> <em>
-													5 </em> </strong>
-
-										</div>
-									</dd>
-								</dl>
-								<!--首页推荐 3 8 14 条显示广告-->
-								<div id="kp_box_394" data-pid="394"
-									data-track-view="{&quot;mod&quot;:&quot;kp_popu_394-522&quot;,&quot;con&quot;:&quot;,,&quot;}"
-									data-track-click="{&quot;mod&quot;:&quot;kp_popu_394-522&quot;,&quot;con&quot;:&quot;,,&quot;}">
-									<div style="background:#fff;padding:2%">
-										<a href="https://edu.csdn.net/topic/ai30?utm_source=xzfeed"
-											target="_blank"
-											style="text-decoration:none;font-size:18px;font-family:微软雅黑;color:#3C3C3C;"><font
-											style="color:#ca0c16;"><b>新一代人工智能</b></font><b>有哪些看点？</b></a> <br>
-										<a
-											href="https://blog.csdn.net/CSDNedu/article/details/84327908"
-											target="_blank"
-											style="color:#999;font-size:14px;text-decoration:none;">互联网+已成为过去，一起来看看AI+，2019年人工智能发展趋势如何？</a><img
-											class="ad-icon" src="files/201608021757063065.png"
-											align="right">
-									</div>
-								</div>
-								<dl class="album_detail_list clearfix">
-									<dt>
-										<a target="_blank"
-											href="https://download.csdn.net/download/xiaobijia/10992532"><img
-											src="files/rar.svg" alt="img"></a>
-									</dt>
-									<dd>
-										<a target="_blank"
-											href="https://download.csdn.net/download/xiaobijia/10992532"
-											class="album_detail_title"> 根据包名检测APP运行状态 开机自动检测 </a>
-										<div class="album_detail_bot clearfix">
-											<label><span>上传者：</span> <em class="upl_name">
-													阿呀波 </em> </label> <label><span>上传时间：</span><em class="upl_time">2019-03-04</em></label>
-											<strong><span class="jifen">积分/C币：</span> <em>
-													5 </em> </strong>
-
-										</div>
-									</dd>
-								</dl>
-								<!--首页推荐 3 8 14 条显示广告-->
-
-								<dl class="album_detail_list clearfix">
-									<dt>
-										<a target="_blank"
-											href="https://download.csdn.net/download/sinacom2010/10992531"><img
-											src="files/rar.svg" alt="img"></a>
-									</dt>
-									<dd>
-										<a target="_blank"
-											href="https://download.csdn.net/download/sinacom2010/10992531"
-											class="album_detail_title"> .net高并发解决方案 </a>
-										<div class="album_detail_bot clearfix">
-											<label><span>上传者：</span> <em class="upl_name">
-													sinacom2010 </em> </label> <label><span>上传时间：</span><em
-												class="upl_time">2019-03-04</em></label> <strong><span
-												class="jifen">积分/C币：</span> <em> 5 </em> </strong>
-
-										</div>
-									</dd>
-								</dl>
-								<!--首页推荐 3 8 14 条显示广告-->
-
-								<dl class="album_detail_list clearfix">
-									<dt>
-										<a target="_blank"
-											href="https://download.csdn.net/download/qq_41032995/10992530"><img
-											src="files/unkonw.svg" alt="img"></a>
-									</dt>
-									<dd>
-										<a target="_blank"
-											href="https://download.csdn.net/download/qq_41032995/10992530"
-											class="album_detail_title"> webdriver jar包 </a>
-										<div class="album_detail_bot clearfix">
-											<label><span>上传者：</span> <em class="upl_name">
-													旸哥 </em> </label> <label><span>上传时间：</span><em class="upl_time">2019-03-04</em></label>
-											<strong><span class="jifen">积分/C币：</span> <em>
-													5 </em> </strong>
-
-										</div>
-									</dd>
-								</dl>
-								<!--首页推荐 3 8 14 条显示广告-->
-
-								<dl class="album_detail_list clearfix">
-									<dt>
-										<a target="_blank"
-											href="https://download.csdn.net/download/qq_39782495/10992513"><img
-											src="files/zip.svg" alt="img"></a>
-									</dt>
-									<dd>
-										<a target="_blank"
-											href="https://download.csdn.net/download/qq_39782495/10992513"
-											class="album_detail_title"> 酒店管理系统 </a>
-										<div class="album_detail_bot clearfix">
-											<label><span>上传者：</span> <em class="upl_name">
-													qq_39782495 </em> </label> <label><span>上传时间：</span><em
-												class="upl_time">2019-03-04</em></label> <strong><span
-												class="jifen">积分/C币：</span> <em> 5 </em> </strong>
-
-										</div>
-									</dd>
-								</dl>
-								<!--首页推荐 3 8 14 条显示广告-->
-
-								<dl class="album_detail_list clearfix">
-									<dt>
-										<a target="_blank"
-											href="https://download.csdn.net/download/jinmaodao1990/10992503"><img
-											src="files/zip.svg" alt="img"></a>
-									</dt>
-									<dd>
-										<a target="_blank"
-											href="https://download.csdn.net/download/jinmaodao1990/10992503"
-											class="album_detail_title"> TensorFlow的基本用法入门版 </a>
-										<div class="album_detail_bot clearfix">
-											<label><span>上传者：</span> <em class="upl_name">
-													jinmaodao1990 </em> </label> <label><span>上传时间：</span><em
-												class="upl_time">2019-03-04</em></label> <strong><span
-												class="jifen">积分/C币：</span> <em> 5 </em> </strong>
-
-										</div>
-									</dd>
-								</dl>
-								<!--首页推荐 3 8 14 条显示广告-->
-								<div id="kp_box_395" data-pid="395"
-									data-track-view="{&quot;mod&quot;:&quot;kp_popu_395-518&quot;,&quot;con&quot;:&quot;,,&quot;}"
-									data-track-click="{&quot;mod&quot;:&quot;kp_popu_395-518&quot;,&quot;con&quot;:&quot;,,&quot;}">
-									<div style="background:#fff;padding:2%">
-										<a
-											href="https://edu.csdn.net/topic/python115?utm_source=xzfeed"
-											target="_blank"
-											style="text-decoration:none;font-size:18px;font-family:微软雅黑;color:#3C3C3C;"><b>服吗！</b><font
-											style="color:#ca0c16;"><b>Python&nbsp;</b></font><b>身家50亿，是java和C++总和！</b></a>
-										<br>
-										<a
-											href="https://bss.csdn.net/m/topic/edu_course?utm_source=xzfeed"
-											target="_blank"
-											style="color:#999;font-size:14px;text-decoration:none;">信吗？Python强势变身最赚钱的语言，原因离不开这两点</a><img
-											class="ad-icon" src="files/201608021757063065.png" alt=""
-											align="right">
-									</div>
-								</div>
-								<dl class="album_detail_list clearfix">
-									<dt>
-										<a target="_blank"
-											href="https://download.csdn.net/download/jinmaodao1990/10992498"><img
-											src="files/zip.svg" alt="img"></a>
-									</dt>
-									<dd>
-										<a target="_blank"
-											href="https://download.csdn.net/download/jinmaodao1990/10992498"
-											class="album_detail_title"> 图神经网络构建代码 </a>
-										<div class="album_detail_bot clearfix">
-											<label><span>上传者：</span> <em class="upl_name">
-													jinmaodao1990 </em> </label> <label><span>上传时间：</span><em
-												class="upl_time">2019-03-04</em></label> <strong><span
-												class="jifen">积分/C币：</span> <em> 5 </em> </strong>
-
-										</div>
-									</dd>
-								</dl>
-								<!--首页推荐 3 8 14 条显示广告-->
-
-								<dl class="album_detail_list clearfix">
-									<dt>
-										<a target="_blank"
-											href="https://download.csdn.net/download/cl941212/10992491"><img
-											src="files/unkonw.svg" alt="img"></a>
-									</dt>
-									<dd>
-										<a target="_blank"
-											href="https://download.csdn.net/download/cl941212/10992491"
-											class="album_detail_title"> 北京理工大无人车程序 </a>
-										<div class="album_detail_bot clearfix">
-											<label><span>上传者：</span> <em class="upl_name">
-													小乐同学� </em> </label> <label><span>上传时间：</span><em
-												class="upl_time">2019-03-04</em></label> <strong><span
-												class="jifen">积分/C币：</span> <em> 5 </em> </strong>
-
-										</div>
-									</dd>
-								</dl>
-								<!--首页推荐 3 8 14 条显示广告-->
-
-								<dl class="album_detail_list clearfix">
-									<dt>
-										<a target="_blank"
-											href="https://download.csdn.net/download/webxf_cn/10992485"><img
-											src="files/rar.svg" alt="img"></a>
-									</dt>
-									<dd>
-										<a target="_blank"
-											href="https://download.csdn.net/download/webxf_cn/10992485"
-											class="album_detail_title"> asp环境探针操作简单 </a>
-										<div class="album_detail_bot clearfix">
-											<label><span>上传者：</span> <em class="upl_name">
-													webxf_cn </em> </label> <label><span>上传时间：</span><em
-												class="upl_time">2019-03-04</em></label> <strong><span
-												class="jifen">积分/C币：</span> <em> 5 </em> </strong>
-
-										</div>
-									</dd>
-								</dl>
-								<!--首页推荐 3 8 14 条显示广告-->
-
-								<dl class="album_detail_list clearfix">
-									<dt>
-										<a target="_blank"
-											href="https://download.csdn.net/download/qq_39161205/10992484"><img
-											src="files/zip.svg" alt="img"></a>
-									</dt>
-									<dd>
-										<a target="_blank"
-											href="https://download.csdn.net/download/qq_39161205/10992484"
-											class="album_detail_title"> java源码集锦 </a>
-										<div class="album_detail_bot clearfix">
-											<label><span>上传者：</span> <em class="upl_name">
-													qq_39161205 </em> </label> <label><span>上传时间：</span><em
-												class="upl_time">2019-03-04</em></label> <strong><span
-												class="jifen">积分/C币：</span> <em> 5 </em> </strong>
-
-										</div>
-									</dd>
-								</dl>
-								<!--首页推荐 3 8 14 条显示广告-->
-
-								<dl class="album_detail_list clearfix">
-									<dt>
-										<a target="_blank"
-											href="https://download.csdn.net/download/qq_34427165/10992483"><img
-											src="files/rar.svg" alt="img"></a>
-									</dt>
-									<dd>
-										<a target="_blank"
-											href="https://download.csdn.net/download/qq_34427165/10992483"
-											class="album_detail_title">
-											22，无线测温和光强--并根据温度和光强值控制LED和继电器.rar </a>
-										<div class="album_detail_bot clearfix">
-											<label><span>上传者：</span> <em class="upl_name">
-													Dala达 </em> </label> <label><span>上传时间：</span><em
-												class="upl_time">2019-03-04</em></label> <strong><span
-												class="jifen">积分/C币：</span> <em> 5 </em> </strong>
-
-										</div>
-									</dd>
-								</dl>
-								<!--首页推荐 3 8 14 条显示广告-->
-
-								<dl class="album_detail_list clearfix">
-									<dt>
-										<a target="_blank"
-											href="https://download.csdn.net/download/wangsuming1/10992462"><img
-											src="files/unkonw.svg" alt="img"></a>
-									</dt>
-									<dd>
-										<a target="_blank"
-											href="https://download.csdn.net/download/wangsuming1/10992462"
-											class="album_detail_title"> Halcon匹配模板函数 </a>
-										<div class="album_detail_bot clearfix">
-											<label><span>上传者：</span> <em class="upl_name">
-													wangsuming1 </em> </label> <label><span>上传时间：</span><em
-												class="upl_time">2019-03-04</em></label> <strong><span
-												class="jifen">积分/C币：</span> <em> 5 </em> </strong>
-
-										</div>
-									</dd>
-								</dl>
-								<!--首页推荐 3 8 14 条显示广告-->
-								<div id="kp_box_396" data-pid="396"
-									data-track-view="{&quot;mod&quot;:&quot;kp_popu_396-526&quot;,&quot;con&quot;:&quot;,,&quot;}"
-									data-track-click="{&quot;mod&quot;:&quot;kp_popu_396-526&quot;,&quot;con&quot;:&quot;,,&quot;}">
-									<div style="background:#fff;padding:2%">
-										<a href="https://edu.csdn.net/topic/ai30?utm_source=xzfeed"
-											target="_blank"
-											style="text-decoration:none;font-size:18px;font-family:微软雅黑;color:#3C3C3C;"><b>
-										</b><font style="color:#ca0c16;"><b>国家产业智能化，</b></font><b>如何分割这一波人工智能红利？程序员如何抓住这波大趋势！</b></a>
-										<br>
-										<a
-											href="https://edu.csdn.net/course/detail/10319?utm_source=xzfeed"
-											target="_blank"
-											style="color:#999;font-size:14px;text-decoration:none;">应用智能化发展越来越快了，提升要有捷径！</a><img
-											class="ad-icon" src="files/201608021757063065.png"
-											align="right">
-									</div>
-								</div>
-								<dl class="album_detail_list clearfix">
-									<dt>
-										<a target="_blank"
-											href="https://download.csdn.net/download/gaxiong/10992459"><img
-											src="files/rar.svg" alt="img"></a>
-									</dt>
-									<dd>
-										<a target="_blank"
-											href="https://download.csdn.net/download/gaxiong/10992459"
-											class="album_detail_title"> UGUI图形系统。 </a>
-										<div class="album_detail_bot clearfix">
-											<label><span>上传者：</span> <em class="upl_name">
-													gaxiong </em> </label> <label><span>上传时间：</span><em
-												class="upl_time">2019-03-04</em></label> <strong><span
-												class="jifen">积分/C币：</span> <em> 5 </em> </strong>
-
-										</div>
-									</dd>
-								</dl>
-								<!--首页推荐 3 8 14 条显示广告-->
-
-								<dl class="album_detail_list clearfix">
-									<dt>
-										<a target="_blank"
-											href="https://download.csdn.net/download/wangsuming1/10992456"><img
-											src="files/unkonw.svg" alt="img"></a>
-									</dt>
-									<dd>
-										<a target="_blank"
-											href="https://download.csdn.net/download/wangsuming1/10992456"
-											class="album_detail_title"> Halcon创建模板 </a>
-										<div class="album_detail_bot clearfix">
-											<label><span>上传者：</span> <em class="upl_name">
-													wangsuming1 </em> </label> <label><span>上传时间：</span><em
-												class="upl_time">2019-03-04</em></label> <strong><span
-												class="jifen">积分/C币：</span> <em> 5 </em> </strong>
-
-										</div>
-									</dd>
-								</dl>
-								<!--首页推荐 3 8 14 条显示广告-->
-
-								<dl class="album_detail_list clearfix">
-									<dt>
-										<a target="_blank"
-											href="https://download.csdn.net/download/dante1987/10992439"><img
-											src="files/rar.svg" alt="img"></a>
-									</dt>
-									<dd>
-										<a target="_blank"
-											href="https://download.csdn.net/download/dante1987/10992439"
-											class="album_detail_title"> 代码生成器 </a>
-										<div class="album_detail_bot clearfix">
-											<label><span>上传者：</span> <em class="upl_name">
-													dante1987 </em> </label> <label><span>上传时间：</span><em
-												class="upl_time">2019-03-04</em></label> <strong><span
-												class="jifen">积分/C币：</span> <em> 5 </em> </strong>
-
-										</div>
-									</dd>
-								</dl>
-								<!--首页推荐 3 8 14 条显示广告-->
-
-								<dl class="album_detail_list clearfix">
-									<dt>
-										<a target="_blank"
-											href="https://download.csdn.net/download/aweibsb/10992436"><img
-											src="files/rar.svg" alt="img"></a>
-									</dt>
-									<dd>
-										<a target="_blank"
-											href="https://download.csdn.net/download/aweibsb/10992436"
-											class="album_detail_title"> WPF入门增-删-改-查 </a>
-										<div class="album_detail_bot clearfix">
-											<label><span>上传者：</span> <em class="upl_name">
-													aweibsb </em> </label> <label><span>上传时间：</span><em
-												class="upl_time">2019-03-04</em></label> <strong><span
-												class="jifen">积分/C币：</span> <em> 5 </em> </strong>
-
-										</div>
-									</dd>
-								</dl>
-								<!--首页推荐 3 8 14 条显示广告-->
-
-								<dl class="album_detail_list clearfix">
-									<dt>
-										<a target="_blank"
-											href="https://download.csdn.net/download/qq_42595550/10992422"><img
-											src="files/rar.svg" alt="img"></a>
-									</dt>
-									<dd>
-										<a target="_blank"
-											href="https://download.csdn.net/download/qq_42595550/10992422"
-											class="album_detail_title"> k-means两个示例 </a>
-										<div class="album_detail_bot clearfix">
-											<label><span>上传者：</span> <em class="upl_name">
-													qq_42595550 </em> </label> <label><span>上传时间：</span><em
-												class="upl_time">2019-03-04</em></label> <strong><span
-												class="jifen">积分/C币：</span> <em> 5 </em> </strong>
-
-										</div>
-									</dd>
-								</dl>
-								<!--首页推荐 3 8 14 条显示广告-->
-
-								<dl class="album_detail_list clearfix">
-									<dt>
-										<a target="_blank"
-											href="https://download.csdn.net/download/cos12a/10992407"><img
-											src="files/rar.svg" alt="img"></a>
-									</dt>
-									<dd>
-										<a target="_blank"
-											href="https://download.csdn.net/download/cos12a/10992407"
-											class="album_detail_title">
-											基于标准C,免费Modbus库程序(v3.1.4),支持RTU,TCP. </a>
-										<div class="album_detail_bot clearfix">
-											<label><span>上传者：</span> <em class="upl_name">
-													熊已出没 </em> </label> <label><span>上传时间：</span><em
-												class="upl_time">2019-03-04</em></label> <strong><span
-												class="jifen">积分/C币：</span> <em> 5 </em> </strong>
-
-										</div>
-									</dd>
-								</dl>
-								<!--首页推荐 3 8 14 条显示广告-->
-
-								<dl class="album_detail_list clearfix">
-									<dt>
-										<a target="_blank"
-											href="https://download.csdn.net/download/ryanczj/10992404"><img
-											src="files/zip.svg" alt="img"></a>
-									</dt>
-									<dd>
-										<a target="_blank"
-											href="https://download.csdn.net/download/ryanczj/10992404"
-											class="album_detail_title"> 迭代法_方格世界_matlab程序实践 </a>
-										<div class="album_detail_bot clearfix">
-											<label><span>上传者：</span> <em class="upl_name">
-													RyanCzj </em> </label> <label><span>上传时间：</span><em
-												class="upl_time">2019-03-04</em></label> <strong><span
-												class="jifen">积分/C币：</span> <em> 5 </em> </strong>
-
-										</div>
-									</dd>
-								</dl>
-								<!--首页推荐 3 8 14 条显示广告-->
-
-								<dl class="album_detail_list clearfix">
-									<dt>
-										<a target="_blank"
-											href="https://download.csdn.net/download/tjpublic001/10992393"><img
-											src="files/txt.svg" alt="img"></a>
-									</dt>
-									<dd>
-										<a target="_blank"
-											href="https://download.csdn.net/download/tjpublic001/10992393"
-											class="album_detail_title"> ios创建手机号 </a>
-										<div class="album_detail_bot clearfix">
-											<label><span>上传者：</span> <em class="upl_name">
-													tjpublic001 </em> </label> <label><span>上传时间：</span><em
-												class="upl_time">2019-03-04</em></label> <strong><span
-												class="jifen">积分/C币：</span> <em> 5 </em> </strong>
-
-										</div>
-									</dd>
-								</dl>
-								<!--首页推荐 3 8 14 条显示广告-->
-
-								<dl class="album_detail_list clearfix">
-									<dt>
-										<a target="_blank"
-											href="https://download.csdn.net/download/weixin_41192331/10992389"><img
-											src="files/zip.svg" alt="img"></a>
-									</dt>
-									<dd>
-										<a target="_blank"
-											href="https://download.csdn.net/download/weixin_41192331/10992389"
-											class="album_detail_title"> VB6动态加载页面、背景虚化、源码 </a>
-										<div class="album_detail_bot clearfix">
-											<label><span>上传者：</span> <em class="upl_name">
-													还没秃顶 </em> </label> <label><span>上传时间：</span><em
-												class="upl_time">2019-03-04</em></label> <strong><span
-												class="jifen">积分/C币：</span> <em> 5 </em> </strong>
-
-										</div>
-									</dd>
-								</dl>
-								<!--首页推荐 3 8 14 条显示广告-->
-
-								<dl class="album_detail_list clearfix">
-									<dt>
-										<a target="_blank"
-											href="https://download.csdn.net/download/egxsun/10992388"><img
-											src="files/rar.svg" alt="img"></a>
-									</dt>
-									<dd>
-										<a target="_blank"
-											href="https://download.csdn.net/download/egxsun/10992388"
-											class="album_detail_title"> socket通信实例客户端代码 </a>
-										<div class="album_detail_bot clearfix">
-											<label><span>上传者：</span> <em class="upl_name">
-													egxsun </em> </label> <label><span>上传时间：</span><em
-												class="upl_time">2019-03-04</em></label> <strong><span
-												class="jifen">积分/C币：</span> <em> 5 </em> </strong>
-
-										</div>
-									</dd>
-								</dl>
-								<!--首页推荐 3 8 14 条显示广告-->
-
-								<dl class="album_detail_list clearfix">
-									<dt>
-										<a target="_blank"
-											href="https://download.csdn.net/download/liujaca/10992383"><img
-											src="files/rar.svg" alt="img"></a>
-									</dt>
-									<dd>
-										<a target="_blank"
-											href="https://download.csdn.net/download/liujaca/10992383"
-											class="album_detail_title"> H5《怪物塔防》游戏源码 </a>
-										<div class="album_detail_bot clearfix">
-											<label><span>上传者：</span> <em class="upl_name">
-													liujaca </em> </label> <label><span>上传时间：</span><em
-												class="upl_time">2019-03-04</em></label> <strong><span
-												class="jifen">积分/C币：</span> <em> 5 </em> </strong>
-
-										</div>
-									</dd>
-								</dl>
-								<!--首页推荐 3 8 14 条显示广告-->
-
-								<dl class="album_detail_list clearfix">
-									<dt>
-										<a target="_blank"
-											href="https://download.csdn.net/download/j407672744/10992382"><img
-											src="files/zip.svg" alt="img"></a>
-									</dt>
-									<dd>
-										<a target="_blank"
-											href="https://download.csdn.net/download/j407672744/10992382"
-											class="album_detail_title">
-											数字通信同步技术的MATLAB与FPGA实现——Xilinx_VHDL版 </a>
-										<div class="album_detail_bot clearfix">
-											<label><span>上传者：</span> <em class="upl_name">
-													j407672744 </em> </label> <label><span>上传时间：</span><em
-												class="upl_time">2019-03-04</em></label> <strong><span
-												class="jifen">积分/C币：</span> <em> 5 </em> </strong>
-
-										</div>
-									</dd>
-								</dl>
-								<!--首页推荐 3 8 14 条显示广告-->
-
-								<dl class="album_detail_list clearfix">
-									<dt>
-										<a target="_blank"
-											href="https://download.csdn.net/download/liujaca/10992380"><img
-											src="files/unkonw.svg" alt="img"></a>
-									</dt>
-									<dd>
-										<a target="_blank"
-											href="https://download.csdn.net/download/liujaca/10992380"
-											class="album_detail_title"> unity国外三消游戏源码 </a>
-										<div class="album_detail_bot clearfix">
-											<label><span>上传者：</span> <em class="upl_name">
-													liujaca </em> </label> <label><span>上传时间：</span><em
-												class="upl_time">2019-03-04</em></label> <strong><span
-												class="jifen">积分/C币：</span> <em> 5 </em> </strong>
-
-										</div>
-									</dd>
-								</dl>
-								<!--首页推荐 3 8 14 条显示广告-->
-
-								<dl class="album_detail_list clearfix">
-									<dt>
-										<a target="_blank"
-											href="https://download.csdn.net/download/j407672744/10992378"><img
-											src="files/zip.svg" alt="img"></a>
-									</dt>
-									<dd>
-										<a target="_blank"
-											href="https://download.csdn.net/download/j407672744/10992378"
-											class="album_detail_title"> 数字调制解调技术的MATLAB与FPGA实现新版
-											Xilinx_VHDL版 程序源代码.rar </a>
-										<div class="album_detail_bot clearfix">
-											<label><span>上传者：</span> <em class="upl_name">
-													j407672744 </em> </label> <label><span>上传时间：</span><em
-												class="upl_time">2019-03-04</em></label> <strong><span
-												class="jifen">积分/C币：</span> <em> 5 </em> </strong>
-
-										</div>
-									</dd>
-								</dl>
-								<!--首页推荐 3 8 14 条显示广告-->
-
-								<dl class="album_detail_list clearfix">
-									<dt>
-										<a target="_blank"
-											href="https://download.csdn.net/download/weixin_41215479/10992370"><img
-											src="files/zip.svg" alt="img"></a>
-									</dt>
-									<dd>
-										<a target="_blank"
-											href="https://download.csdn.net/download/weixin_41215479/10992370"
-											class="album_detail_title"> stm32智能安防系统 </a>
-										<div class="album_detail_bot clearfix">
-											<label><span>上传者：</span> <em class="upl_name">
-													fanatic-C </em> </label> <label><span>上传时间：</span><em
-												class="upl_time">2019-03-04</em></label> <strong><span
-												class="jifen">积分/C币：</span> <em> 5 </em> </strong>
-
-										</div>
-									</dd>
-								</dl>
-								<!--首页推荐 3 8 14 条显示广告-->
-
-								<dl class="album_detail_list clearfix">
-									<dt>
-										<a target="_blank"
-											href="https://download.csdn.net/download/xiaoliuhexiaolu/10992361"><img
-											src="files/rar.svg" alt="img"></a>
-									</dt>
-									<dd>
-										<a target="_blank"
-											href="https://download.csdn.net/download/xiaoliuhexiaolu/10992361"
-											class="album_detail_title"> 数字水印提取DCT&amp;DWT;的代码加运行文档 </a>
-										<div class="album_detail_bot clearfix">
-											<label><span>上传者：</span> <em class="upl_name">
-													Lilian1002 </em> </label> <label><span>上传时间：</span><em
-												class="upl_time">2019-03-04</em></label> <strong><span
-												class="jifen">积分/C币：</span> <em> 5 </em> </strong>
-
-										</div>
-									</dd>
-								</dl>
-								<!--首页推荐 3 8 14 条显示广告-->
-
-								<dl class="album_detail_list clearfix">
-									<dt>
-										<a target="_blank"
-											href="https://download.csdn.net/download/chuanqi10/10992358"><img
-											src="files/rar.svg" alt="img"></a>
-									</dt>
-									<dd>
-										<a target="_blank"
-											href="https://download.csdn.net/download/chuanqi10/10992358"
-											class="album_detail_title"> 基于C#+Arcgis Engine
-											开发的房产测绘软件学习代码 </a>
-										<div class="album_detail_bot clearfix">
-											<label><span>上传者：</span> <em class="upl_name">
-													chuanqi10 </em> </label> <label><span>上传时间：</span><em
-												class="upl_time">2019-03-04</em></label> <strong><span
-												class="jifen">积分/C币：</span> <em> 5 </em> </strong>
-
-										</div>
-									</dd>
-								</dl>
-								<!-- 循环结束 -->
-							</div>
-						</div>
-
-						<!-- 最新上传资源-->
-						<div class="tab_page tab2_con" style="display: none;">
-							<!--album_detail列表-->
-							<div class="album_detail_wrap">
-								<!-- 循环开始 -->
-								<!--首页推荐 3 8 14 条显示广告-->
-								<dl class="album_detail_list clearfix">
-									<dt>
-										<a href="https://download.csdn.net/download/bskl2046/10992541"
-											target="_blank"><img src="files/pdf.svg" alt="img"></a>
-									</dt>
-									<dd>
-										<a href="https://download.csdn.net/download/bskl2046/10992541"
-											target="_blank" class="album_detail_title">
-											Linux环境下基于Socket的网络通信 </a>
-										<div class="album_detail_bot clearfix">
-											<label><span>上传者：</span> <em class="upl_name">
-													bskl2046 </em> </label> <label><span>上传时间：</span><em
-												class="upl_time">2019-03-04</em></label> <strong> <span
-												class="jifen">积分/C币：</span> <em> 5 </em>
-											</strong>
-										</div>
-									</dd>
-								</dl>
-								<!--首页推荐 3 8 14 条显示广告-->
-								<dl class="album_detail_list clearfix">
-									<dt>
-										<a
-											href="https://download.csdn.net/download/qq_33633350/10992540"
-											target="_blank"><img src="files/zip.svg" alt="img"></a>
-									</dt>
-									<dd>
-										<a
-											href="https://download.csdn.net/download/qq_33633350/10992540"
-											target="_blank" class="album_detail_title">
-											Advanced-REST-client_v3.1.9+definitions.json </a>
-										<div class="album_detail_bot clearfix">
-											<label><span>上传者：</span> <em class="upl_name">
-													叉会儿腰 </em> </label> <label><span>上传时间：</span><em
-												class="upl_time">2019-03-04</em></label> <strong> <span
-												class="jifen">积分/C币：</span> <em> 5 </em>
-											</strong>
-										</div>
-									</dd>
-								</dl>
-								<!--首页推荐 3 8 14 条显示广告-->
-								<div id="kp_box_394" data-pid="394"
-									data-track-view="{&quot;mod&quot;:&quot;kp_popu_394-522&quot;,&quot;con&quot;:&quot;,,&quot;}"
-									data-track-click="{&quot;mod&quot;:&quot;kp_popu_394-522&quot;,&quot;con&quot;:&quot;,,&quot;}">
-									<div style="background:#fff;padding:2%">
-										<a href="https://edu.csdn.net/topic/ai30?utm_source=xzfeed"
-											target="_blank"
-											style="text-decoration:none;font-size:18px;font-family:微软雅黑;color:#3C3C3C;"><font
-											style="color:#ca0c16;"><b>新一代人工智能</b></font><b>有哪些看点？</b></a> <br>
-										<a
-											href="https://blog.csdn.net/CSDNedu/article/details/84327908"
-											target="_blank"
-											style="color:#999;font-size:14px;text-decoration:none;">互联网+已成为过去，一起来看看AI+，2019年人工智能发展趋势如何？</a><img
-											class="ad-icon" src="files/201608021757063065.png"
-											align="right">
-									</div>
-								</div>
-								<dl class="album_detail_list clearfix">
-									<dt>
-										<a
-											href="https://download.csdn.net/download/qq_34639286/10992539"
-											target="_blank"><img src="files/unkonw.svg" alt="img"></a>
-									</dt>
-									<dd>
-										<a
-											href="https://download.csdn.net/download/qq_34639286/10992539"
-											target="_blank" class="album_detail_title"> qt4.8.6安装 </a>
-										<div class="album_detail_bot clearfix">
-											<label><span>上传者：</span> <em class="upl_name">
-													qq_34639286 </em> </label> <label><span>上传时间：</span><em
-												class="upl_time">2019-03-04</em></label> <strong> <span
-												class="jifen">积分/C币：</span> <em> 5 </em>
-											</strong>
-										</div>
-									</dd>
-								</dl>
-								<!--首页推荐 3 8 14 条显示广告-->
-								<dl class="album_detail_list clearfix">
-									<dt>
-										<a
-											href="https://download.csdn.net/download/sinacom2010/10992538"
-											target="_blank"><img src="files/docx.svg" alt="img"></a>
-									</dt>
-									<dd>
-										<a
-											href="https://download.csdn.net/download/sinacom2010/10992538"
-											target="_blank" class="album_detail_title"> .net core
-											构建微服务 </a>
-										<div class="album_detail_bot clearfix">
-											<label><span>上传者：</span> <em class="upl_name">
-													sinacom2010 </em> </label> <label><span>上传时间：</span><em
-												class="upl_time">2019-03-04</em></label> <strong> <span
-												class="jifen">积分/C币：</span> <em> 5 </em>
-											</strong>
-										</div>
-									</dd>
-								</dl>
-								<!--首页推荐 3 8 14 条显示广告-->
-								<dl class="album_detail_list clearfix">
-									<dt>
-										<a
-											href="https://download.csdn.net/download/qq_33185566/10992537"
-											target="_blank"><img src="files/zip.svg" alt="img"></a>
-									</dt>
-									<dd>
-										<a
-											href="https://download.csdn.net/download/qq_33185566/10992537"
-											target="_blank" class="album_detail_title"> 番茄助手Visual
-											Assist X破解版支持vs2017亲测可用 </a>
-										<div class="album_detail_bot clearfix">
-											<label><span>上传者：</span> <em class="upl_name">
-													石院情歌小王子 </em> </label> <label><span>上传时间：</span><em
-												class="upl_time">2019-03-04</em></label> <strong> <span
-												class="jifen">积分/C币：</span> <em> 5 </em>
-											</strong>
-										</div>
-									</dd>
-								</dl>
-								<!--首页推荐 3 8 14 条显示广告-->
-								<dl class="album_detail_list clearfix">
-									<dt>
-										<a
-											href="https://download.csdn.net/download/qq_41032995/10992536"
-											target="_blank"><img src="files/unkonw.svg" alt="img"></a>
-									</dt>
-									<dd>
-										<a
-											href="https://download.csdn.net/download/qq_41032995/10992536"
-											target="_blank" class="album_detail_title"> pdfbox jar包 </a>
-										<div class="album_detail_bot clearfix">
-											<label><span>上传者：</span> <em class="upl_name">
-													旸哥 </em> </label> <label><span>上传时间：</span><em class="upl_time">2019-03-04</em></label>
-											<strong> <span class="jifen">积分/C币：</span> <em>
-													5 </em>
-											</strong>
-										</div>
-									</dd>
-								</dl>
-								<!--首页推荐 3 8 14 条显示广告-->
-								<dl class="album_detail_list clearfix">
-									<dt>
-										<a
-											href="https://download.csdn.net/download/chenxiaotao22/10992535"
-											target="_blank"><img src="files/zip.svg" alt="img"></a>
-									</dt>
-									<dd>
-										<a
-											href="https://download.csdn.net/download/chenxiaotao22/10992535"
-											target="_blank" class="album_detail_title">
-											做一个共享浏览器，把seesion克隆到异地 </a>
-										<div class="album_detail_bot clearfix">
-											<label><span>上传者：</span> <em class="upl_name">
-													chenxiaotao22 </em> </label> <label><span>上传时间：</span><em
-												class="upl_time">2019-03-04</em></label> <strong> <span
-												class="jifen">积分/C币：</span> <em> 5 </em>
-											</strong>
-										</div>
-									</dd>
-								</dl>
-								<!--首页推荐 3 8 14 条显示广告-->
-								<div id="kp_box_395" data-pid="395"
-									data-track-view="{&quot;mod&quot;:&quot;kp_popu_395-518&quot;,&quot;con&quot;:&quot;,,&quot;}"
-									data-track-click="{&quot;mod&quot;:&quot;kp_popu_395-518&quot;,&quot;con&quot;:&quot;,,&quot;}">
-									<div style="background:#fff;padding:2%">
-										<a
-											href="https://edu.csdn.net/topic/python115?utm_source=xzfeed"
-											target="_blank"
-											style="text-decoration:none;font-size:18px;font-family:微软雅黑;color:#3C3C3C;"><b>服吗！</b><font
-											style="color:#ca0c16;"><b>Python&nbsp;</b></font><b>身家50亿，是java和C++总和！</b></a>
-										<br>
-										<a
-											href="https://bss.csdn.net/m/topic/edu_course?utm_source=xzfeed"
-											target="_blank"
-											style="color:#999;font-size:14px;text-decoration:none;">信吗？Python强势变身最赚钱的语言，原因离不开这两点</a><img
-											class="ad-icon" src="files/201608021757063065.png" alt=""
-											align="right">
-									</div>
-								</div>
-								<dl class="album_detail_list clearfix">
-									<dt>
-										<a
-											href="https://download.csdn.net/download/weixin_38823375/10992534"
-											target="_blank"><img src="files/rar.svg" alt="img"></a>
-									</dt>
-									<dd>
-										<a
-											href="https://download.csdn.net/download/weixin_38823375/10992534"
-											target="_blank" class="album_detail_title"> 三菱PLC定位程序 </a>
-										<div class="album_detail_bot clearfix">
-											<label><span>上传者：</span> <em class="upl_name">
-													weixin_38823375 </em> </label> <label><span>上传时间：</span><em
-												class="upl_time">2019-03-04</em></label> <strong> <span
-												class="jifen">积分/C币：</span> <em> 5 </em>
-											</strong>
-										</div>
-									</dd>
-								</dl>
-								<!--首页推荐 3 8 14 条显示广告-->
-								<dl class="album_detail_list clearfix">
-									<dt>
-										<a
-											href="https://download.csdn.net/download/qq_41032995/10992533"
-											target="_blank"><img src="files/zip.svg" alt="img"></a>
-									</dt>
-									<dd>
-										<a
-											href="https://download.csdn.net/download/qq_41032995/10992533"
-											target="_blank" class="album_detail_title"> htmlunit jar包
-										</a>
-										<div class="album_detail_bot clearfix">
-											<label><span>上传者：</span> <em class="upl_name">
-													旸哥 </em> </label> <label><span>上传时间：</span><em class="upl_time">2019-03-04</em></label>
-											<strong> <span class="jifen">积分/C币：</span> <em>
-													5 </em>
-											</strong>
-										</div>
-									</dd>
-								</dl>
-								<!--首页推荐 3 8 14 条显示广告-->
-								<dl class="album_detail_list clearfix">
-									<dt>
-										<a
-											href="https://download.csdn.net/download/xiaobijia/10992532"
-											target="_blank"><img src="files/rar.svg" alt="img"></a>
-									</dt>
-									<dd>
-										<a
-											href="https://download.csdn.net/download/xiaobijia/10992532"
-											target="_blank" class="album_detail_title"> 根据包名检测APP运行状态
-											开机自动检测 </a>
-										<div class="album_detail_bot clearfix">
-											<label><span>上传者：</span> <em class="upl_name">
-													阿呀波 </em> </label> <label><span>上传时间：</span><em class="upl_time">2019-03-04</em></label>
-											<strong> <span class="jifen">积分/C币：</span> <em>
-													5 </em>
-											</strong>
-										</div>
-									</dd>
-								</dl>
-								<!--首页推荐 3 8 14 条显示广告-->
-								<dl class="album_detail_list clearfix">
-									<dt>
-										<a
-											href="https://download.csdn.net/download/sinacom2010/10992531"
-											target="_blank"><img src="files/rar.svg" alt="img"></a>
-									</dt>
-									<dd>
-										<a
-											href="https://download.csdn.net/download/sinacom2010/10992531"
-											target="_blank" class="album_detail_title"> .net高并发解决方案 </a>
-										<div class="album_detail_bot clearfix">
-											<label><span>上传者：</span> <em class="upl_name">
-													sinacom2010 </em> </label> <label><span>上传时间：</span><em
-												class="upl_time">2019-03-04</em></label> <strong> <span
-												class="jifen">积分/C币：</span> <em> 5 </em>
-											</strong>
-										</div>
-									</dd>
-								</dl>
-								<!--首页推荐 3 8 14 条显示广告-->
-								<dl class="album_detail_list clearfix">
-									<dt>
-										<a
-											href="https://download.csdn.net/download/qq_41032995/10992530"
-											target="_blank"><img src="files/unkonw.svg" alt="img"></a>
-									</dt>
-									<dd>
-										<a
-											href="https://download.csdn.net/download/qq_41032995/10992530"
-											target="_blank" class="album_detail_title"> webdriver
-											jar包 </a>
-										<div class="album_detail_bot clearfix">
-											<label><span>上传者：</span> <em class="upl_name">
-													旸哥 </em> </label> <label><span>上传时间：</span><em class="upl_time">2019-03-04</em></label>
-											<strong> <span class="jifen">积分/C币：</span> <em>
-													5 </em>
-											</strong>
-										</div>
-									</dd>
-								</dl>
-								<!--首页推荐 3 8 14 条显示广告-->
-								<dl class="album_detail_list clearfix">
-									<dt>
-										<a href="https://download.csdn.net/download/wkh___/10992529"
-											target="_blank"><img src="files/zip.svg" alt="img"></a>
-									</dt>
-									<dd>
-										<a href="https://download.csdn.net/download/wkh___/10992529"
-											target="_blank" class="album_detail_title">
-											postman-4.1.2.zip </a>
-										<div class="album_detail_bot clearfix">
-											<label><span>上传者：</span> <em class="upl_name">
-													954L </em> </label> <label><span>上传时间：</span><em
-												class="upl_time">2019-03-04</em></label> <strong> <span
-												class="jifen">积分/C币：</span> <em> 5 </em>
-											</strong>
-										</div>
-									</dd>
-								</dl>
-								<!--首页推荐 3 8 14 条显示广告-->
-								<div id="kp_box_396" data-pid="396"
-									data-track-view="{&quot;mod&quot;:&quot;kp_popu_396-526&quot;,&quot;con&quot;:&quot;,,&quot;}"
-									data-track-click="{&quot;mod&quot;:&quot;kp_popu_396-526&quot;,&quot;con&quot;:&quot;,,&quot;}">
-									<div style="background:#fff;padding:2%">
-										<a href="https://edu.csdn.net/topic/ai30?utm_source=xzfeed"
-											target="_blank"
-											style="text-decoration:none;font-size:18px;font-family:微软雅黑;color:#3C3C3C;"><b>
-										</b><font style="color:#ca0c16;"><b>国家产业智能化，</b></font><b>如何分割这一波人工智能红利？程序员如何抓住这波大趋势！</b></a>
-										<br>
-										<a
-											href="https://edu.csdn.net/course/detail/10319?utm_source=xzfeed"
-											target="_blank"
-											style="color:#999;font-size:14px;text-decoration:none;">应用智能化发展越来越快了，提升要有捷径！</a><img
-											class="ad-icon" src="files/201608021757063065.png"
-											align="right">
-									</div>
-								</div>
-								<dl class="album_detail_list clearfix">
-									<dt>
-										<a
-											href="https://download.csdn.net/download/weixin_42669818/10992527"
-											target="_blank"><img src="files/txt.svg" alt="img"></a>
-									</dt>
-									<dd>
-										<a
-											href="https://download.csdn.net/download/weixin_42669818/10992527"
-											target="_blank" class="album_detail_title"> surface pro
-											4系统恢复教程 </a>
-										<div class="album_detail_bot clearfix">
-											<label><span>上传者：</span> <em class="upl_name">
-													陈学利 </em> </label> <label><span>上传时间：</span><em class="upl_time">2019-03-04</em></label>
-											<strong> <span class="jifen">积分/C币：</span> <em>
-													5 </em>
-											</strong>
-										</div>
-									</dd>
-								</dl>
-								<!--首页推荐 3 8 14 条显示广告-->
-								<dl class="album_detail_list clearfix">
-									<dt>
-										<a
-											href="https://download.csdn.net/download/sky_yang_sky/10992526"
-											target="_blank"><img src="files/docx.svg" alt="img"></a>
-									</dt>
-									<dd>
-										<a
-											href="https://download.csdn.net/download/sky_yang_sky/10992526"
-											target="_blank" class="album_detail_title"> SAP常用事务代码汇总 </a>
-										<div class="album_detail_bot clearfix">
-											<label><span>上传者：</span> <em class="upl_name">
-													sky_yang_sky </em> </label> <label><span>上传时间：</span><em
-												class="upl_time">2019-03-04</em></label> <strong> <span
-												class="jifen">积分/C币：</span> <em> 5 </em>
-											</strong>
-										</div>
-									</dd>
-								</dl>
-								<!--首页推荐 3 8 14 条显示广告-->
-								<dl class="album_detail_list clearfix">
-									<dt>
-										<a
-											href="https://download.csdn.net/download/jinmaodao1990/10992524"
-											target="_blank"><img src="files/pdf.svg" alt="img"></a>
-									</dt>
-									<dd>
-										<a
-											href="https://download.csdn.net/download/jinmaodao1990/10992524"
-											target="_blank" class="album_detail_title"> Writing
-											Science </a>
-										<div class="album_detail_bot clearfix">
-											<label><span>上传者：</span> <em class="upl_name">
-													jinmaodao1990 </em> </label> <label><span>上传时间：</span><em
-												class="upl_time">2019-03-04</em></label> <strong> <span
-												class="jifen">积分/C币：</span> <em> 5 </em>
-											</strong>
-										</div>
-									</dd>
-								</dl>
-								<!--首页推荐 3 8 14 条显示广告-->
-								<dl class="album_detail_list clearfix">
-									<dt>
-										<a href="https://download.csdn.net/download/skmzy/10992523"
-											target="_blank"><img src="files/zip.svg" alt="img"></a>
-									</dt>
-									<dd>
-										<a href="https://download.csdn.net/download/skmzy/10992523"
-											target="_blank" class="album_detail_title"> 颜色拾取工具 </a>
-										<div class="album_detail_bot clearfix">
-											<label><span>上传者：</span> <em class="upl_name">
-													DemonSnail </em> </label> <label><span>上传时间：</span><em
-												class="upl_time">2019-03-04</em></label> <strong> <span
-												class="jifen">积分/C币：</span> <em> 5 </em>
-											</strong>
-										</div>
-									</dd>
-								</dl>
-								<!--首页推荐 3 8 14 条显示广告-->
-								<dl class="album_detail_list clearfix">
-									<dt>
-										<a
-											href="https://download.csdn.net/download/qq_36236684/10992522"
-											target="_blank"><img src="files/zip.svg" alt="img"></a>
-									</dt>
-									<dd>
-										<a
-											href="https://download.csdn.net/download/qq_36236684/10992522"
-											target="_blank" class="album_detail_title"> sipp-3.3工具 </a>
-										<div class="album_detail_bot clearfix">
-											<label><span>上传者：</span> <em class="upl_name">
-													kong1337 </em> </label> <label><span>上传时间：</span><em
-												class="upl_time">2019-03-04</em></label> <strong> <span
-												class="jifen">积分/C币：</span> <em> 5 </em>
-											</strong>
-										</div>
-									</dd>
-								</dl>
-								<!--首页推荐 3 8 14 条显示广告-->
-								<dl class="album_detail_list clearfix">
-									<dt>
-										<a href="https://download.csdn.net/download/ym423059/10992521"
-											target="_blank"><img src="files/zip.svg" alt="img"></a>
-									</dt>
-									<dd>
-										<a href="https://download.csdn.net/download/ym423059/10992521"
-											target="_blank" class="album_detail_title"> MagPi 78期
-											2019.02月份杂志 </a>
-										<div class="album_detail_bot clearfix">
-											<label><span>上传者：</span> <em class="upl_name">
-													让梦不要醒 </em> </label> <label><span>上传时间：</span><em
-												class="upl_time">2019-03-04</em></label> <strong> <span
-												class="jifen">积分/C币：</span> <em> 5 </em>
-											</strong>
-										</div>
-									</dd>
-								</dl>
-								<!--首页推荐 3 8 14 条显示广告-->
-								<dl class="album_detail_list clearfix">
-									<dt>
-										<a
-											href="https://download.csdn.net/download/qq_36242215/10992519"
-											target="_blank"><img src="files/pdf.svg" alt="img"></a>
-									</dt>
-									<dd>
-										<a
-											href="https://download.csdn.net/download/qq_36242215/10992519"
-											target="_blank" class="album_detail_title"> ROS moveit </a>
-										<div class="album_detail_bot clearfix">
-											<label><span>上传者：</span> <em class="upl_name">
-													qq_36242215 </em> </label> <label><span>上传时间：</span><em
-												class="upl_time">2019-03-04</em></label> <strong> <span
-												class="jifen">积分/C币：</span> <em> 5 </em>
-											</strong>
-										</div>
-									</dd>
-								</dl>
-								<!--首页推荐 3 8 14 条显示广告-->
-								<dl class="album_detail_list clearfix">
-									<dt>
-										<a
-											href="https://download.csdn.net/download/weixin_44565417/10992518"
-											target="_blank"><img src="files/unkonw.svg" alt="img"></a>
-									</dt>
-									<dd>
-										<a
-											href="https://download.csdn.net/download/weixin_44565417/10992518"
-											target="_blank" class="album_detail_title">
-											scipy-1.2.0-cp37-cp37m-win_amd64.whl </a>
-										<div class="album_detail_bot clearfix">
-											<label><span>上传者：</span> <em class="upl_name">
-													weixin_44565417 </em> </label> <label><span>上传时间：</span><em
-												class="upl_time">2019-03-04</em></label> <strong> <span
-												class="jifen">积分/C币：</span> <em> 5 </em>
-											</strong>
-										</div>
-									</dd>
-								</dl>
-								<!--首页推荐 3 8 14 条显示广告-->
-								<dl class="album_detail_list clearfix">
-									<dt>
-										<a
-											href="https://download.csdn.net/download/guofude910713/10992517"
-											target="_blank"><img src="files/docx.svg" alt="img"></a>
-									</dt>
-									<dd>
-										<a
-											href="https://download.csdn.net/download/guofude910713/10992517"
-											target="_blank" class="album_detail_title"> springboot
-											log4jdbc 打印完整sql </a>
-										<div class="album_detail_bot clearfix">
-											<label><span>上传者：</span> <em class="upl_name">
-													guofude910713 </em> </label> <label><span>上传时间：</span><em
-												class="upl_time">2019-03-04</em></label> <strong> <span
-												class="jifen">积分/C币：</span> <em> 5 </em>
-											</strong>
-										</div>
-									</dd>
-								</dl>
-								<!--首页推荐 3 8 14 条显示广告-->
-								<dl class="album_detail_list clearfix">
-									<dt>
-										<a
-											href="https://download.csdn.net/download/qq_43239649/10992516"
-											target="_blank"><img src="files/zip.svg" alt="img"></a>
-									</dt>
-									<dd>
-										<a
-											href="https://download.csdn.net/download/qq_43239649/10992516"
-											target="_blank" class="album_detail_title">
-											HTML5全民飞机大战游戏代码 </a>
-										<div class="album_detail_bot clearfix">
-											<label><span>上传者：</span> <em class="upl_name">
-													小jinx </em> </label> <label><span>上传时间：</span><em
-												class="upl_time">2019-03-04</em></label> <strong> <span
-												class="jifen">积分/C币：</span> <em> 5 </em>
-											</strong>
-										</div>
-									</dd>
-								</dl>
-								<!--首页推荐 3 8 14 条显示广告-->
-								<dl class="album_detail_list clearfix">
-									<dt>
-										<a
-											href="https://download.csdn.net/download/zhiyoushiwo/10992515"
-											target="_blank"><img src="files/zip.svg" alt="img"></a>
-									</dt>
-									<dd>
-										<a
-											href="https://download.csdn.net/download/zhiyoushiwo/10992515"
-											target="_blank" class="album_detail_title"> vb6.0
-											win7兼容精简版（企业版） </a>
-										<div class="album_detail_bot clearfix">
-											<label><span>上传者：</span> <em class="upl_name">
-													zhiyoushiwo </em> </label> <label><span>上传时间：</span><em
-												class="upl_time">2019-03-04</em></label> <strong> <span
-												class="jifen">积分/C币：</span> <em> 5 </em>
-											</strong>
-										</div>
-									</dd>
-								</dl>
-								<!--首页推荐 3 8 14 条显示广告-->
-								<dl class="album_detail_list clearfix">
-									<dt>
-										<a
-											href="https://download.csdn.net/download/u014688839/10992514"
-											target="_blank"><img src="files/pdf.svg" alt="img"></a>
-									</dt>
-									<dd>
-										<a
-											href="https://download.csdn.net/download/u014688839/10992514"
-											target="_blank" class="album_detail_title"> 区块链技术指南 </a>
-										<div class="album_detail_bot clearfix">
-											<label><span>上传者：</span> <em class="upl_name">
-													RoninTonny </em> </label> <label><span>上传时间：</span><em
-												class="upl_time">2019-03-04</em></label> <strong> <span
-												class="jifen">积分/C币：</span> <em> 5 </em>
-											</strong>
-										</div>
-									</dd>
-								</dl>
-								<!--首页推荐 3 8 14 条显示广告-->
-								<dl class="album_detail_list clearfix">
-									<dt>
-										<a
-											href="https://download.csdn.net/download/qq_39782495/10992513"
-											target="_blank"><img src="files/zip.svg" alt="img"></a>
-									</dt>
-									<dd>
-										<a
-											href="https://download.csdn.net/download/qq_39782495/10992513"
-											target="_blank" class="album_detail_title"> 酒店管理系统 </a>
-										<div class="album_detail_bot clearfix">
-											<label><span>上传者：</span> <em class="upl_name">
-													qq_39782495 </em> </label> <label><span>上传时间：</span><em
-												class="upl_time">2019-03-04</em></label> <strong> <span
-												class="jifen">积分/C币：</span> <em> 5 </em>
-											</strong>
-										</div>
-									</dd>
-								</dl>
-								<!--首页推荐 3 8 14 条显示广告-->
-								<dl class="album_detail_list clearfix">
-									<dt>
-										<a
-											href="https://download.csdn.net/download/weixin_42669818/10992512"
-											target="_blank"><img src="files/zip.svg" alt="img"></a>
-									</dt>
-									<dd>
-										<a
-											href="https://download.csdn.net/download/weixin_42669818/10992512"
-											target="_blank" class="album_detail_title">
-											EOSMSG5.2单方相机设置读取 </a>
-										<div class="album_detail_bot clearfix">
-											<label><span>上传者：</span> <em class="upl_name">
-													陈学利 </em> </label> <label><span>上传时间：</span><em class="upl_time">2019-03-04</em></label>
-											<strong> <span class="jifen">积分/C币：</span> <em>
-													5 </em>
-											</strong>
-										</div>
-									</dd>
-								</dl>
-								<!--首页推荐 3 8 14 条显示广告-->
-								<dl class="album_detail_list clearfix">
-									<dt>
-										<a
-											href="https://download.csdn.net/download/xyt_dream/10992511"
-											target="_blank"><img src="files/unkonw.svg" alt="img"></a>
-									</dt>
-									<dd>
-										<a
-											href="https://download.csdn.net/download/xyt_dream/10992511"
-											target="_blank" class="album_detail_title">
-											servlet-api.jar </a>
-										<div class="album_detail_bot clearfix">
-											<label><span>上传者：</span> <em class="upl_name">
-													xyt_Dream </em> </label> <label><span>上传时间：</span><em
-												class="upl_time">2019-03-04</em></label> <strong> <span
-												class="jifen">积分/C币：</span> <em> 5 </em>
-											</strong>
-										</div>
-									</dd>
-								</dl>
-								<!--首页推荐 3 8 14 条显示广告-->
-								<dl class="album_detail_list clearfix">
-									<dt>
-										<a
-											href="https://download.csdn.net/download/qq_33768269/10992510"
-											target="_blank"><img src="files/rar.svg" alt="img"></a>
-									</dt>
-									<dd>
-										<a
-											href="https://download.csdn.net/download/qq_33768269/10992510"
-											target="_blank" class="album_detail_title"> 大嘴漫谈数据挖掘概论和技术
-										</a>
-										<div class="album_detail_bot clearfix">
-											<label><span>上传者：</span> <em class="upl_name">
-													qq_33768269 </em> </label> <label><span>上传时间：</span><em
-												class="upl_time">2019-03-04</em></label> <strong> <span
-												class="jifen">积分/C币：</span> <em> 5 </em>
-											</strong>
-										</div>
-									</dd>
-								</dl>
-								<!--首页推荐 3 8 14 条显示广告-->
-								<dl class="album_detail_list clearfix">
-									<dt>
-										<a
-											href="https://download.csdn.net/download/xmt1139057136/10992509"
-											target="_blank"><img src="files/zip.svg" alt="img"></a>
-									</dt>
-									<dd>
-										<a
-											href="https://download.csdn.net/download/xmt1139057136/10992509"
-											target="_blank" class="album_detail_title"> （电梯）三菱PLC梯形图
-										</a>
-										<div class="album_detail_bot clearfix">
-											<label><span>上传者：</span> <em class="upl_name">
-													业余草 </em> </label> <label><span>上传时间：</span><em class="upl_time">2019-03-04</em></label>
-											<strong> <span class="jifen">积分/C币：</span> <em>
-													5 </em>
-											</strong>
-										</div>
-									</dd>
-								</dl>
-								<!-- 循环结束 -->
+								<ins th:each="file:${queryDownFile}">
+									<dl class="album_detail_list clearfix">
+										<dt>
+											<a target="_blank" href="javascript:void(0);">
+											<img src="/tribune/static/files/unkonw.svg" alt="img"></a>
+										</dt>
+										<dd>
+											<a target="_blank"
+												th:href="@{/downfilec/queryById(fileid=${file.fileId},downtypeid=${file.downtypeid},userid=${file.userid})}"
+												class="album_detail_title"><span th:text="${file.fileName}"></span></a>
+											<div class="album_detail_bot clearfix">
+												<label><span>上传者：</span><em class="upl_name"><span th:text="${file.uindo.nickname}">
+												</span></em> </label> <label><span>上传时间：</span><em class="upl_time"><span th:text="${#dates.format(file.uploadtime,'yyyy-MM-dd')}">
+												</span></em></label>
+												<strong><span class="jifen">积分/C币：</span><em th:text="${file.need_score}"></em></strong>
+											</div>
+										</dd>
+									</dl>
+								</ins>
 							</div>
 						</div>
 					</div>
 				</div>
-
-				<!-- 广告位开始 -->
-				<div>
-					<ins data-revive-zoneid="238"
-						data-revive-id="8c38e720de1c90a6f6ff52f3f89c4d57" id="revive-0-2"></ins>
-				</div>
-				<!-- 广告位结束 -->
-
 			</div>
 
 			<div class="main_r pull-right" style="margin-top: -50px;">
 				<div class="dl_right_fixed">
-					<div class="carousel_box wrapper"
-						style="width: 300px; margin-top: -125px; margin-bottom: 116px;">
-						<div class="quake-slider" style="width: 300px; height: 250px;">
-							<div class="quake-slider-images">
-
-								<a target="_blank"
-									href="https://bss.csdn.net/m/topic/edu_exam?utm_source=down">
-									<img src="files/a05a097a294e361ce68929a8a84d8410.jpg"
-									alt="Clean Business Free">
-								</a> <a target="_blank"
-									href="https://bss.csdn.net/m/topic/edu_course?utm_source=down0">
-									<img src="files/8e4b508cd1abb4e582c7d3f3835cc8a9.png"
-									alt="Clean Business Free">
-								</a> <a target="_blank"
-									href="https://edu.csdn.net/topic/python115?utm_source=xz">
-									<img src="files/ff33ccd05d0b5580007e0d59adc8d3c2.png"
-									alt="Clean Business Free">
-								</a>
-							</div>
-						</div>
-					</div>
-
-					<!--用户登录信息-->
-					<!-- 用户未登录 -->
-
-					<!-- 用户已登录结束 -->
 					<!--用户信息区域布局更改开始-->
 					<div class="mod_personal home_personal">
 						<dl class="personal_wrap clearfix" id="personal_wrap">
 							<dt>
-								<a target="_blank" href="http://my.csdn.net/qq_41594083"> <img
-									src="files/2_qq_41594083.jpg" alt="img" class="head"></a> <span
-									class="vip vip_l vip_l_single"> <span
-									class="img_flag clearfix one_img"> <svg
-											class="common_icon" aria-hidden="true">
-                                                                                   </svg>
+								<a target="_blank" href="http://my.csdn.net/qq_41594083"> 
+									<img src="/tribune/static/files/2_qq_41594083.jpg" alt="img" class="head">
+								</a> 
+									<span class="vip vip_l vip_l_single"> 
+									<span class="img_flag clearfix one_img"> 
+									<svg class="common_icon" aria-hidden="true"></svg>
 								</span>
 								</span>
 							</dt>
@@ -3719,517 +2041,119 @@ trackSuperId:460,
 								<p>
 									<span title="当前用户等级：" class="dl_rank"> <span
 										title="当前用户等级：1"><img style="margin: 0;"
-											src="files/down1.png" alt=""></span>
+											src="/tribune/static/files/down1.png" alt=""></span>
 									</span> <span class="dl_score"><i>下载积分：</i><em>0</em></span>
 								</p>
 							</dd>
 						</dl>
 						<div class="user_sign_tips">
 							<div class="btn_group ">
-								<a target="_blank" href="https://download.csdn.net/upload"
+								<a target="_blank" th:href="@{/downtypec/queryTypeAll}"
 									class="dl_upload_btn">上传资源</a>
 							</div>
 						</div>
 					</div>
-					<!--用户信息区域布局更改结束-->
-
 					<!--精品推荐-->
 					<div class="gitchat_news right_plate_con">
 						<div class="com_plate_tit">
-							<span class="plate_title">精品推荐</span><a target="_blank"
-								href="http://gitbook.cn/?utm_source=tj_down02" class="more_link">更多</a>
+							<span class="plate_title">精品推荐</span>
 						</div>
 						<div class="con_detail">
-							<ul class="news_list">
-								<li class="news_item"><a target="_blank"
-									href="https://gitchat.csdn.net/column/5ad70dea9a722231b25ddbf8?utm_source=dl18101901"
-									class="clearfix">
+							<ul class="news_list" th:each="ro:${recommend}">
+								<li class="news_item">
+									<a target="_blank" th:href="@{/downfilec/queryById(fileid=${ro.fileId},downtypeid=${ro.downtypeid})}" class="clearfix">
 										<p>
-											<strong>机器学习极简入门课</strong>
+											<strong th:text=${ro.fileName}></strong>
 										</p>
-								</a>
+									</a>
 									<p class="small">
-										<span class="authorName">作者/分享人：</span><span>李烨 ·
-											微软高级软件工程师</span>
-									</p></li>
-								<li class="news_item"><a target="_blank"
-									href="http://gitchat.csdn.net/column/5ad56a79af8f2f35290f6535?utm_source=dl18101901"
-									class="clearfix">
-										<p>
-											<strong>Python 快速入门实战教程</strong>
-										</p>
-								</a>
-									<p class="small">
-										<span class="authorName">作者/分享人：</span><span>应书澜 ·
-											阿里巴巴资深工程师</span>
-									</p></li>
-								<li class="news_item"><a target="_blank"
-									href="https://gitchat.csdn.net/column/5a13be9775462408e0da8d9d?utm_source=dl18101901"
-									class="clearfix">
-										<p>
-											<strong>Docker 极简入门指南</strong>
-										</p>
-								</a>
-									<p class="small">
-										<span class="authorName">作者/分享人：</span><span>张仕超 ·
-											技术圈次元壁破冰者</span>
-									</p></li>
+										<span class="authorName">作者/分享人：</span>
+										<span th:text="${ro.uindo.nickname}"></span>
+										<span>职位：<span th:text="${ro.uindo.curjob}"></span></span>
+									</p>
+								</li>
 							</ul>
-						</div>
-					</div>
-
-					<div id="kp_box_219" data-pid="219"
-						data-track-view="{&quot;mod&quot;:&quot;kp_popu_219-377&quot;,&quot;con&quot;:&quot;,,&quot;}"
-						data-track-click="{&quot;mod&quot;:&quot;kp_popu_219-377&quot;,&quot;con&quot;:&quot;,,&quot;}">
-						<!-- 广告位开始 -->
-						<div class="J_adv" data-view="true" data-mod="ad_popu_239"
-							data-mtp="2" data-order="1055" data-con="ad_content_4857"
-							style="width: 300px; height: 250px;">
-							<div style="line-height:0px;">
-								<a target="_blank"
-									href="https://gitbook.cn/gitchat/column/5c3168154fcd483b02710425?utm_source=sylb190110"><img
-									width="300" height="250" src="files/201901101738487988.png"></a>
-								<div
-									style="left: 0px; width: 26px; background: transparent url(&quot;//img-ads.csdn.net/2016/201608021757063065.png&quot;) no-repeat scroll right top; height: 16px;z-index: 12; position: relative; bottom: 16px;"></div>
-							</div>
-						</div>
-						<!-- 广告位结束 -->
-						<script language="javascript" type="text/javascript"
-							src="files/async_new.js.下载"></script>
-					</div>
-					<!--会议PPT-->
-					<div class="meeting_ppt right_plate_con">
-						<div class="com_plate_tit">
-							<span class="plate_title">会议PPT</span><a
-								href="https://download.csdn.net/meeting" class="more_link">更多</a>
-						</div>
-						<!--会议开始  -->
-						<div class="con_detail">
-							<a target="_blank"
-								href="https://download.csdn.net/meeting/meeting_detail/43"
-								class="ppt_img"><img
-								src="files/9e3d8848522c19ded34c380adce820dc.jpg" alt=""><span
-								class="ppt_num">55</span></a>
-							<ul class="cd_list">
-								<li class="cd_item"><a target="_blank"
-									href="https://download.csdn.net/meeting/meeting_detail/43"
-									class="item_tit">PPT下载 | 2018 中国大数据技术大会（BDTC）</a><span
-									class="item_time"><i class="fa fa-clock-o"></i>2018-12-06
-										- 2018-12-08</span></li>
-								<li class="cd_item"><a href="javascript:;" class="item_tit">PPT
-										下载 | CCAI 2017 中国人工智能大会</a> <span class="item_time"><i
-										class="fa fa-clock-o"></i>2017-07-22 - 2017-07-23</span></li>
-							</ul>
-						</div>
-						<!--会议结束  -->
-					</div>
-
-					<!--我的tag-->
-					<div class="tags right_plate_con">
-						<div class="com_plate_tit">
-							<span class="plate_title">热门资源标签</span>
-						</div>
-						<div class="con_detail content clearfix">
-							<!-- 循环tag开始 -->
-							<a href="https://download.csdn.net/search/0/10/0/2/1/apktool"
-								target="_blank">apktool</a> <a
-								href="https://download.csdn.net/search/0/10/0/2/1/%E4%BF%AE%E5%A4%8D"
-								target="_blank">修复</a> <a
-								href="https://download.csdn.net/search/0/10/0/2/1/chm"
-								target="_blank">chm</a> <a
-								href="https://download.csdn.net/search/0/10/0/2/1/%E4%B8%AD%E6%96%87%E7%89%88"
-								target="_blank">中文版</a> <a
-								href="https://download.csdn.net/search/0/10/0/2/1/%E5%8F%8D%E7%BC%96%E8%AF%91"
-								target="_blank">反编译</a> <a
-								href="https://download.csdn.net/search/0/10/0/2/1/%E8%B5%84%E6%BA%90"
-								target="_blank">资源</a> <a
-								href="https://download.csdn.net/search/0/10/0/2/1/%E6%B3%A8%E5%86%8C%E6%9C%BA"
-								target="_blank">注册机</a> <a
-								href="https://download.csdn.net/search/0/10/0/2/1/%E7%A0%B4%E8%A7%A3"
-								target="_blank">破解</a> <a
-								href="https://download.csdn.net/search/0/10/0/2/1/%E5%A4%A7%E8%AF%9D%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%2C%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%2C%E6%BA%90%E4%BB%A3%E7%A0%81"
-								target="_blank">大话设计模式,设计模式,源代码</a> <a
-								href="https://download.csdn.net/search/0/10/0/2/1/apk"
-								target="_blank">apk</a> <a
-								href="https://download.csdn.net/search/0/10/0/2/1/api1.7"
-								target="_blank">api1.7</a> <a
-								href="https://download.csdn.net/search/0/10/0/2/1/java"
-								target="_blank">java</a> <a
-								href="https://download.csdn.net/search/0/10/0/2/1/asp%E5%A4%A7%E9%A9%AC%2C%E5%85%8D%E6%9D%80"
-								target="_blank">asp大马,免杀</a> <a
-								href="https://download.csdn.net/search/0/10/0/2/1/jdk1.7"
-								target="_blank">jdk1.7</a> <a
-								href="https://download.csdn.net/search/0/10/0/2/1/64%E4%BD%8D"
-								target="_blank">64位</a> <a
-								href="https://download.csdn.net/search/0/10/0/2/1/plsql"
-								target="_blank">plsql</a> <a
-								href="https://download.csdn.net/search/0/10/0/2/1/developer"
-								target="_blank">developer</a> <a
-								href="https://download.csdn.net/search/0/10/0/2/1/64%E4%BD%8D%E5%8F%AF%E7%94%A8"
-								target="_blank">64位可用</a> <a
-								href="https://download.csdn.net/search/0/10/0/2/1/%E8%A7%A3%E5%8E%8B%E7%89%88"
-								target="_blank">解压版</a> <a
-								href="https://download.csdn.net/search/0/10/0/2/1/navicat"
-								target="_blank">navicat</a>
-							<!-- 临时tag -->
-							<a
-								href="https://www.csdn.net/gather_18/MtTakg1sNDQ5LWRvd25sb2Fk.html"
-								target="_blank">c#</a>
-							<!-- 循环tag结束-->
-						</div>
-					</div>
-					<!--  copyright 信息-->
-
-					<!--公告-->
-					<div class="dl_wrap">
-						<h4 class="dl_common_t">
-							<span>公告</span>
-						</h4>
-						<div class="dl_notice">
-							<ul class="resource_c_list">
-								<li><i class="fa fa-caret-right"></i><a
-									href="http://bbs.csdn.net/topics/392285451">
-										CSDN下载频道资源及相关规则调整公告V11.10</a></li>
-								<li><i class="fa fa-caret-right"></i><a
-									href="http://bbs.csdn.net/forums/DownloadQuestion">下载频道用户反馈专区</a></li>
-								<li><i class="fa fa-caret-right"></i><a
-									href="http://bbs.csdn.net/topics/392275720">下载频道积分规则调整V1710.18</a></li>
-							</ul>
-						</div>
-					</div>
-					<!--  copyright 信息-->
-					<div class="fixed_dl">
-						<div class="public_pc_right_footer2018">
-							<div class="right_box footer_box csdn-tracking-statistics"
-								data-mod="popu_475" data-dsm="post">
-								<div class="contact-box" id="footer-contact-box">
-									<div class="img-box">
-										<a
-											href="https://bbs.csdn.net/forums/Service?utm_source=csdn_footer"
-											target="_blank"><img src="files/csdn_cs_qr.png"
-											alt="微信客服" style="padding: 6px;"></a>
-										<p class="app-text">微信客服</p>
-									</div>
-									<div class="img-box fr">
-										<a
-											href="http://wpa.b.qq.com/cgi/wpa.php?ln=1&amp;key=XzgwMDE4MDEwNl80ODc3MzVfODAwMTgwMTA2XzJf"
-											target="_blank"><img style="padding:6px;"
-											src="files/csdn-kf.png" alt="QQ客服"></a>
-										<p class="app-text">QQ客服</p>
-									</div>
-								</div>
-								<div class="contact-info">
-									<p>
-										<svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-											<path
-												d="M2.167 2h11.666C14.478 2 15 2.576 15 3.286v9.428c0 .71-.522 1.286-1.167 1.286H2.167C1.522 14 1 13.424 1 12.714V3.286C1 2.576 1.522 2 2.167 2zm-.164 3v1L8 10l6-4V5L8 9 2.003 5z"
-												fill="#5c5c5c" fill-rule="evenodd"></path></svg>
-										<a href="mailto:webmaster@csdn.net" target="_blank"><span
-											class="txt">kefu@csdn.net</span></a> <em class="width126"><svg
-												t="1538013544186" width="17" height="17" style=""
-												viewBox="0 0 1024 1024" version="1.1"
-												xmlns="http://www.w3.org/2000/svg" p-id="23556"
-												xmlns:xlink="http://www.w3.org/1999/xlink">
-												<defs>
-												<style type="text/css"></style></defs>
-												<path
-													d="M902.60033922 650.96445566c-18.0718526-100.84369837-94.08399771-166.87723736-94.08399771-166.87723737 10.87530062-91.53186599-28.94715402-107.78733693-28.94715401-107.78733691C771.20003413 93.08221664 517.34798062 98.02553561 511.98620441 98.16348824 506.65661791 98.02553561 252.75857992 93.08221664 244.43541101 376.29988138c0 0-39.79946279 16.25547094-28.947154 107.78733691 0 0-75.98915247 66.03353901-94.0839977 166.87723737 0 0-9.63372291 170.35365477 86.84146124 20.85850523 0 0 21.70461757 56.79068296 61.50407954 107.78733692 0 0-71.1607951 23.19910867-65.11385185 83.46161052 0 0-2.43717093 67.16015592 151.93232126 62.56172014 0 0 108.5460788-8.0932473 141.10300432-52.14626271H526.33792324c32.57991817 44.05301539 141.10300431 52.1462627 141.10300431 52.14626271 154.3235077 4.59843579 151.95071457-62.56172013 151.95071457-62.56172014 6.00095876-60.26250183-65.11385185-83.46161053-65.11385185-83.46161052 39.77647014-50.99665395 61.4810877-107.78733693 61.4810877-107.78733692 96.45219231 149.49514952 86.84146124-20.85850523 86.84146125-20.85850523"
-													p-id="23557" fill="#5c5c5c"></path></svg><a
-											href="http://wpa.b.qq.com/cgi/wpa.php?ln=1&amp;key=XzgwMDE4MDEwNl80ODc3MzVfODAwMTgwMTA2XzJf"
-											class="qqcustomer_s" target="_blank"><span class="txt">QQ客服</span></a></em>
-									</p>
-									<p>
-										<em class="width126"><svg t="1538012951761" width="17"
-												height="17" style="" viewBox="0 0 1024 1024" version="1.1"
-												xmlns="http://www.w3.org/2000/svg" p-id="23083"
-												xmlns:xlink="http://www.w3.org/1999/xlink">
-												<defs>
-												<style type="text/css"></style></defs>
-												<path
-													d="M466.4934485 880.02006511C264.6019863 859.18313878 107.13744214 688.54706608 107.13744214 481.14947309 107.13744214 259.68965394 286.68049114 80.14660493 508.14031029 80.14660493s401.00286817 179.54304901 401.00286814 401.00286816v1.67343191C908.30646249 737.58941724 715.26799489 943.85339507 477.28978337 943.85339507c-31.71423369 0-62.61874229-3.67075386-92.38963569-10.60739903 30.09478346-11.01226158 56.84270313-29.63593923 81.5933008-53.22593095z m-205.13036267-398.87059202a246.77722444 246.77722444 0 0 0 493.5544489 0 30.85052691 30.85052691 0 0 0-61.70105383 0 185.07617062 185.07617062 0 0 1-370.15234125 0 30.85052691 30.85052691 0 0 0-61.70105382 0z"
-													p-id="23084" fill="#5c5c5c"></path></svg><a
-											href="http://bbs.csdn.net/forums/Service" target="_blank"><span
-												class="txt">客服论坛</span></a></em>
-										<svg t="1538013874294" width="17" height="17" style=""
-											viewBox="0 0 1194 1024" version="1.1"
-											xmlns="http://www.w3.org/2000/svg" p-id="23784"
-											xmlns:xlink="http://www.w3.org/1999/xlink">
-											<defs>
-											<style type="text/css"></style></defs>
-											<path
-												d="M1031.29689505 943.85339507h-863.70679012A71.98456279 71.98456279 0 0 1 95.60554212 871.86883228v-150.85178906c0-28.58329658 16.92325492-54.46750945 43.13135785-65.93861527l227.99160176-99.75813425c10.55341735-4.61543317 18.24580594-14.0082445 20.72896295-25.23643277l23.21211998-105.53417343a71.95757195 71.95757195 0 0 1 70.28414006-56.51881307h236.95255971c33.79252817 0 63.02360485 23.5090192 70.28414004 56.51881307l23.21211997 105.53417343c2.48315701 11.25517912 10.17554562 20.62099961 20.72896296 25.23643277l227.99160177 99.75813425a71.98456279 71.98456279 0 0 1 43.13135783 65.93861527v150.85178906A71.98456279 71.98456279 0 0 1 1031.26990421 943.85339507z m-431.85339506-143.94213475c143.94213474 0 143.94213474-48.34058941 143.94213474-107.96334876s-64.45411922-107.96334877-143.94213474-107.96334877c-79.51500637 0-143.94213474 48.34058941-143.94213475 107.96334877s0 107.96334877 143.94213475 107.96334876zM1103.254467 296.07330247v148.9894213a35.97878598 35.97878598 0 0 1-44.15700966 35.03410667l-143.94213473-33.57660146a36.0057768 36.0057768 0 0 1-27.80056231-35.03410668V296.1002933c-35.97878598-47.98970852-131.95820302-71.98456279-287.91126031-71.98456279S347.53801649 248.11058478 311.53223967 296.1002933v115.385829c0 16.73431906-11.52508749 31.25538946-27.80056233 35.03410668l-143.94213473 33.57660146A35.97878598 35.97878598 0 0 1 95.63253297 445.06272377V296.07330247C162.81272673 152.13116772 330.77670658 80.14660493 599.47049084 80.14660493s436.63077325 71.98456279 503.81096699 215.92669754z"
-												p-id="23785" fill="#5c5c5c"></path></svg>
-										400-660-0108
-									</p>
-									<p style="text-align:center">工作时间 8:30-22:00</p>
-								</div>
-								<div class="bg-gray">
-									<div class="feed_copyright">
-										<p>
-											<a class="right-dotte"
-												href="https://www.csdn.net/company/index.html#about"
-												target="_blank">关于我们</a><a
-												href="https://www.csdn.net/company/index.html#recruit"
-												target="_blank" class="right-dotte">招聘</a><a
-												href="https://www.csdn.net/company/index.html#contact"
-												target="_blank" class="right-dotte">广告服务</a> <a
-												href="https://www.csdn.net/gather/A" target="_blank"
-												class="footer_baidu"> 网站地图</a>
-										</p>
-										<p class="fz12_baidu">
-											<a href="https://zn.baidu.com/cse/home/index" target="_blank"><svg
-													width="13" height="14" xmlns="http://www.w3.org/2000/svg">
-													<path
-														d="M8.392 7.013c1.014 1.454 2.753 2.8 2.753 2.8s1.303 1.017.47 2.98c-.833 1.962-3.876.942-3.876.942s-1.122-.36-2.424-.072c-1.303.291-2.426.181-2.426.181s-1.523.037-1.957-1.888c-.434-1.927 1.52-2.982 1.666-3.161.145-.183 1.159-.873 1.81-1.963.653-1.09 2.608-1.962 3.984.181zm1.23 5.706V9.346H8.64v2.534h-.937s-.3-.044-.356-.285V9.33l-.925.015v2.518s.042.627.925.855h2.277zm-3.685.013V7.951l-.896-.014v1.295H3.987s-1.054.086-1.422 1.28c-.129.798.114 1.266.156 1.368.043.099.383.682 1.238.852h1.978zm-2.433-1.45c-.087-.286.013-.613.057-.741.042-.128.228-.427.61-.54h.855v1.948h-.797s-.555-.029-.725-.668zm6.877-8.775c-.143.909-.865 2.108-1.99 1.962-1.121-.144-1.375-1.16-1.267-2.179C7.214 1.458 8.21.18 9.007.364c.796.18 1.52 1.235 1.374 2.143zm-4.09-.345c0 1.197-.68 2.164-1.52 2.164S3.25 3.36 3.25 2.162C3.25.967 3.932 0 4.77 0c.842 0 1.52.967 1.52 2.162zm4.854 2.09c1.34 0 1.701 1.309 1.701 1.743 0 .438.182 2.29-1.485 2.326-1.667.037-1.737-1.126-1.737-1.96 0-.874.179-2.11 1.52-2.11zm-7.93.581c.045.398.253 2.217-1.27 2.544C.427 7.704-.14 5.947.028 5.124c0 0 .18-1.78 1.412-1.89.98-.085 1.7.986 1.774 1.6z"
-														fill="#999" fill-rule="evenodd"></path></svg><em>百度提供站内搜索</em></a>&nbsp;<a
-												href="http://www.miibeian.gov.cn/" target="_blank"
-												class="ml14">京ICP证19004658号</a>
-										</p>
-										<p class="fz12_baidu">©1999-2019 北京创新乐知网络技术有限公司</p>
-									</div>
-								</div>
-								<div class="allow-info-box">
-									<p>
-										<a
-											href="http://www.hd315.gov.cn/beian/view.asp?bianhao=010202001032100010"
-											target="_blank"><span>经营性网站备案信息</span></a> <em
-											class="width126"><a href="http://www.cyberpolice.cn/"
-											target="_blank"><span>网络110报警服务</span></a></em>
-									</p>
-									<p>
-										<a href="http://www.bjjubao.org/" target="_blank"><span>北京互联网违法和不良信息举报中心</span></a>
-									</p>
-									<p>
-										<a href="http://www.12377.cn/" target="_blank"><span>中国互联网举报中心</span></a>
-									</p>
-								</div>
-							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-
-		<div style="position: fixed;">
-			<ins data-revive-zoneid="150"
-				data-revive-id="8c38e720de1c90a6f6ff52f3f89c4d57" id="revive-0-4"></ins>
-			<ins data-revive-zoneid="151"
-				data-revive-id="8c38e720de1c90a6f6ff52f3f89c4d57" id="revive-0-5"></ins>
-			<ins data-revive-zoneid="152"
-				data-revive-id="8c38e720de1c90a6f6ff52f3f89c4d57" id="revive-0-6"></ins>
-		</div>
-
 	</div>
-	<link href="files/indexSuperise.css" rel="stylesheet">
-
-	<div class="meau-gotop-box"
-		style="right: 8px; bottom: 40px; z-index: 110;">
-		<a href="https://mall.csdn.net/vip_code" id="adContent"
-			class="btn-meau"> </a> <a href="https://download.csdn.net/#"
-			id="backtop" class="btn-meau" title="返回顶部"> <svg
-				xmlns="http://www.w3.org/2000/svg" width="19" height="12">        <path
-					d="M9.314 0l9.313 9.314-2.12 2.121-7.193-7.192-7.193 7.192L0 9.314z"
-					fill="#FFF" fill-rule="evenodd"></path>      </svg>
-		</a>
-	</div>
-	<script language="javascript" type="text/javascript"
-		src="files/publib_footer-1.0.3.js.下载"></script>
-	<link rel="stylesheet" type="text/css"
-		href="files/pub_footer_1.0.3.css">
-	<!--右侧整体固定-->
-	<script language="javascript" type="text/javascript"
-		src="files/fixed-sidebar.js.下载"></script>
-
+	<script type="text/javascript" src="/tribune/static/js/jquery.js"></script>
 	<script type="text/javascript">
-
-
-        $(function () {
-            //右侧全部固定在底部
-            window.csdn.fixedSidebar({
-                targetBox: $('.public_pc_right_footer2018'), //判断到达底部的div,公共footer可选 $('.persion_article'),$('.public_pc_right_footer2018')
-                mainBox: $(".download_l"), //侧边栏旁边的主体div,默认 $("main")
-                sidebar: $(".dl_right_fixed"), //侧边栏,默认 $("aside")
-                direction: 'right', //侧边栏浮动方向,可选'right','left',
-                position: 'fixed',//定位方式
-                bottom: 0,
-                zIndex: 99,
-                sidebarRightMargin: 20,//direction为left,侧边栏距离mainbox的右边距
-                sidebarLeftMargin: 20,//direction为right,侧边栏距离mainbox的左边距
-            });
-            //下载总量实时滚动显示
-            getdata();
-
-
-
-            //高级搜索：自定义select
-            $(document).click(function () {
-                $(".dropdrown_menu").hide();
-                $(".dropdrown_menu").siblings(".dropdownDefault").attr("isDrop", true);
-
-            });
-
-
-            $(".dropdownDefault").click(function (even) {
-                var siblingsIsShow = $(this).parent(".dropdownContainer").siblings(".dropdownContainer").find(".dropdrown_menu").is(":hidden")
-                if (!siblingsIsShow) {
-                    $(this).parent(".dropdownContainer").siblings(".dropdownContainer").find(".dropdrown_menu").hide();
-                    $(this).attr("isDrop", true);
-                }
-                if ($(this).attr("isDrop") === "true") {
-                    $(this).siblings(".dropdrown_menu").show();
-                    $(this).attr("isDrop", false);
-
-                } else {
-                    $(this).siblings(".dropdrown_menu").hide();
-                    $(this).attr("isDrop", true);
-                }
-                even.stopPropagation();
-
-            });
-
-            $(".dropdrown_menu li a,.dropdrown_menu span a").click(function () {
-                $(this).closest(".dropdrown_menu").siblings(".dropdownDefault").html($(this).html());
-                $(this).closest(".dropdrown_menu").siblings(".dropdownDefault").attr("bate-id", $(this).parent().attr("bate-id"));
-                $(this).closest(".dropdrown_menu").siblings(".dropdownDefault").attr("isDrop", true);
-                $(this).closest(".dropdrown_menu").hide();
-            });
-
-            //资源推荐TAB页显示
-            TabSwitch.init($(".J_tabSwitch"));
-        })
-
-
-        function search_submit() {
-            var categoryid = $(".category").attr("bate-id");
-            var sourcetype = $(".sourcetype").attr("bate-id");
-            var keywords = $("#keywords").val().trim();
-            keywords = keywords.replace(/C/i, "c");
-
-            if (parseInt(categoryid) > 0 && parseInt(sourcetype) <= 0 && keywords == '') {
-                var imgHtml = '<img class="report_img" src="https://download.csdn.net/report.png?type=search_click_id&categoryid=' + categoryid + '&v=' + Math.random() + '"/>';
-                $("#technicalfield").append(imgHtml);
-            }
-            if (parseInt(sourcetype) > 0 && parseInt(categoryid) <= 0 && keywords == '') {
-                var imgHtml = '<img class="report_img" src="https://download.csdn.net/report.png?type=search_click_type&sourcetype=' + sourcetype + '&v=' + Math.random() + '"/>';
-                $("#resourcetype").append(imgHtml);
-            }
-            if (parseInt(sourcetype) > 0 && parseInt(categoryid) > 0 && keywords == '') {
-                var imgHtml = '<img class="report_img" src="https://download.csdn.net/report.png?type=search_click_idtype&categoryid=' + categoryid + '&sourcetype=' + sourcetype + '&v=' + Math.random() + '"/>';
-                $("#technicalfield").append(imgHtml);
-                $("#resourcetype").append(imgHtml);
-            }
-            if (parseInt(sourcetype) > 0 && parseInt(categoryid) <= 0 && keywords != '') {
-                var imgHtml = '<img class="report_img" src="https://download.csdn.net/report.png?type=search_click_tk&sourcetype=' + sourcetype + '&keywords=' + keywords + '&v=' + Math.random() + '"/>';
-                $("#resourcetype").append(imgHtml);
-                $("#keywords").append(imgHtml);
-            }
-            if (parseInt(sourcetype) <= 0 && parseInt(categoryid) > 0 && keywords != '') {
-                var imgHtml = '<img class="report_img" src="https://download.csdn.net/report.png?type=search_click_ck&categoryid=' + categoryid + '&keywords=' + keywords + '&v=' + Math.random() + '"/>';
-                $("#technicalfield").append(imgHtml);
-                $("#keywords").append(imgHtml);
-            }
-            if (keywords != '' && parseInt(sourcetype) <= 0 && parseInt(categoryid) <= 0) {
-                var imgHtml = '<img class="report_img" src="https://download.csdn.net/report.png?type=search_click_k&keywords=' + keywords + '&v=' + Math.random() + '"/>';
-                $("#keywords").append(imgHtml);
-            }
-            if (keywords != '' && parseInt(sourcetype) > 0 && parseInt(categoryid) > 0) {
-                var imgHtml = '<img class="report_img" src="https://download.csdn.net/report.png?type=search_click_idtypek&categoryid=' + categoryid + '&sourcetype=' + sourcetype + '&keywords=' + keywords + '&v=' + Math.random() + '"/>';
-                $("#technicalfield").append(imgHtml);
-                $("#resourcetype").append(imgHtml);
-                $("#keywords").append(imgHtml);
-            }
-
-            // %23表示 #
-            if (keywords.indexOf('c%23') >= 0) {
-                keywords = keywords.replace("c%23", 'c井');
-            }
-            if (keywords != '') {
-                keywords = encodeURIComponent(keywords)
-                var url = "https://download.csdn.net/psearch?keywords=" + keywords;
-                window.location.href = url;
-            }
-            if (keywords == '') {
-                //有可能是大类，有可能是小类，有可能有大类和小类
-                window.location.href = "/psearch/" + categoryid + '/' + sourcetype;
-            }
-            if (keywords != '') {
-                window.location.href = "/psearch/" + categoryid + '/' + sourcetype + '/' + '0' + '/' + '2' + '/' + '1' + '/' + keywords;
-            }
-        }
-
-        function KeyP(event) {
-            var code = (navigator.appname == "Netscape") ? event.which : event.keyCode;
-            var keywords = $(".keywords").val().trim();
-            keywords = keywords.replace(/C/i, "c");
-            keywords = encodeURIComponent(keywords);
-            // %2F表示 /  %2C为 ,   %5C为 \
-            if (keywords.indexOf("%2F") >= 0) {
-                keywords = keywords.replace('%2F', '%2C');
-            }
-            if (keywords.indexOf('%5C') >= 0) {
-                keywords = keywords.replace('%5C', '%2C');
-            }
-            if (keywords.indexOf('c%23') >= 0) {
-                keywords = keywords.replace("c%23", 'c井');
-            }
-            if (code == 13 && keywords != '') {
-                location.href = "https://download.csdn.net/psearch/0/10/0/2/1/" + keywords;
-            }
-            $("#keywords").attr("href", 'https://download.csdn.net/psearch/' + '0/10/0/2/1/' + keywords);
-            if (keywords == '') {
-                $("#keywords").attr("href", 'https://download.csdn.net/psearch/0/10/0/0/1');
-            }
-        }
-
-        //下载总量实时显示相关方法
-        //     /***** 1、 获取后台下载总量 *****/
-        function getdata() {
-            var num = $("#cur_num").val();
-            $.ajax({
-                //url: '/index.php/main/upload_total',
-                url: '/index.php/main_new/upload_total?timeStamp=' + new Date().getTime(),
-                dataType: "json",
-                error: function () {},
-                success: function (data) {
-                    show_num(data);
-                }
-            });
-        }
-
-        function show_num(n) {
-            $(".download_number").html("");
-            var it = $(".download_number i");
-            var len = String(n).length;
-            for (var i = 0; i < len; i++) {
-                if (it.length <= i) {
-                    $(".download_number").append("<i></i>");
-                }
-                var num = String(n).charAt(i);
-                var y = -parseInt(num) * 40;
-                var obj = $(".download_number i").eq(i);
-                obj.animate({
-                    backgroundPosition: '(0 ' + String(y) + 'px)'
-                }, 'slow', 'swing', function () {
-                }
-                );
-
-            }
-            var m = len % 3 == 0 ? len / 3 - 1 : len / 3;
-            for (var j = 1; j <= m; j++) {
-                $(".download_number i").eq(len - 3 * j).before("<em>,</em>");
-            }
-            $("#cur_num").val(n);
-        }
-</script>
-	<script language="javascript" type="text/javascript"
-		src="files/async-1.0.0.js.下载"></script>
-	<div style="position:fixed; top:0; left:0; overflow:hidden;">
-		<input style="position:absolute; left:-300px;" type="text" value=""
-			id="focus_retriever" readonly="true">
-	</div>
-	<iframe class="bdSug_sd"
-		style="display: none; position: absolute; border-width: 0px;"
-		src="files/saved_resource.html"></iframe>
-	<div id="bdSug_1551680683577" class="bdSug_wpr" style="display: none;"></div>
+		$(function() {
+	       //为filter下的所有a标签添加单击事件
+	       $(".dl_wrap a").click(function () {
+	    	   var tableContent = "";
+	           $(this).parents("dl").children("dd").each(function () {
+					$('a',this).removeClass("seled");
+	           });
+	           $(this).attr("class", "seled");
+	           $.ajax({
+	           	url:'/tribune/downfilec/queryfile',
+	           	type:'post',
+	       		data:{ 'downtype':RetSelecteds(),'filetype':filetpeSelecteds()},
+	       		success:function(data){
+	       			if(data != ""){
+	       				for (var i = 0; i < data.length; i++) {
+							 tableContent +="<dl class='album_detail_list clearfix'><dt>";
+							 tableContent +="<a target='_blank' href='javascript:void(0);'><img src='../files/unkonw.svg' alt='img'></a>";
+							 tableContent +="</dt><dd><a target='_blank' href='queryById?fileid="+data[i].fileId+"&downtypeid="+data[i].downtypeid+"' class='album_detail_title'>";
+							 tableContent +="<span>"+data[i].fileName+"</span></a><div class='album_detail_bot clearfix'><label><span>上传者：</span>";
+							 tableContent +="<em class='upl_name'><span>"+data[i].uindo.nickname+"</span></em> </label> <label><span>上传时间：</span><em class='upl_time'>";
+							 tableContent +="<span>"+data[i].uploadtime+"</span></em></label><strong><span class='jifen'>积分/C币：</span><em>"+data[i].need_score+"</em>";
+							 tableContent +="</strong></div></dd></dl>";
+	                	}
+						$(".album_detail_wrap").html(tableContent);
+	       			}else{
+	       				$(".album_detail_wrap").html("<h3 style='text-align:center;'>抱歉，没有数据！</h3>");
+	       			}
+	       		}
+	           });
+	       });
+		});
+		function RetSelecteds() {
+	       var result = "";
+	       $("#downtype a[class='seled']").each(function () {
+	       	result += $(this).html()+",";
+	       });
+	       return result;
+	   	}
+		function filetpeSelecteds() {
+	       var result = "";
+	       $("#filetype a[class='seled']").each(function () {
+	       	result += $(this).html()+",";
+	       });
+	       return result;
+		}
+		function searchs(){
+			$(".dl_wrap dt+dd a").attr("class",'');
+			var fileName = $("#fileName").val();
+			var tableContent = "";
+			$.ajax({
+				url:'/tribune/downfilec/findByName',
+				data:{"fileName":fileName},
+				success:function(data){
+					if(data != ""){
+						for (var i = 0; i < data.length; i++) {
+							 tableContent +="<dl class='album_detail_list clearfix'><dt>";
+							 tableContent +="<a target='_blank' href='javascript:void(0);'><img src='../files/unkonw.svg' alt='img'></a>";
+							 tableContent +="</dt><dd><a target='_blank' href='queryById?fileid="+data[i].fileId+"&downtypeid="+data[i].downtypeid+"' class='album_detail_title'>";
+							 tableContent +="<span>"+data[i].fileName+"</span></a><div class='album_detail_bot clearfix'><label><span>上传者：</span>";
+							 tableContent +="<em class='upl_name'><span>"+data[i].uindo.nickname+"</span></em> </label> <label><span>上传时间：</span><em class='upl_time'>";
+							 tableContent +="<span>"+data[i].uploadtime+"</span></em></label><strong><span class='jifen'>积分/C币：</span><em>"+data[i].need_score+"</em>";
+							 tableContent +="</strong></div></dd></dl>";
+	                	}
+						$(".album_detail_wrap").html(tableContent);
+						$("#fileName").val("");
+					}else{
+						alert("没有数据！请重新输入");
+						window.location.href="queryDownFile";
+					}
+				}
+			});
+		}
+	</script>
+	
 </body>
 </html>

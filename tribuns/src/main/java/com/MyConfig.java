@@ -1,4 +1,4 @@
-/*package com;
+package com;
 
 import javax.annotation.Resource;
 
@@ -21,4 +21,4 @@ public class MyConfig extends WebMvcConfigurerAdapter{
         registry.addResourceHandler("/txt/**").addResourceLocations("file:"+config.getTxtSavePath());
         super.addResourceHandlers(registry);
     }
-}*/
+}

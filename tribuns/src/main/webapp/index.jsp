@@ -18,9 +18,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	
   </head>
   
-  <link rel="stylesheet" type="text/css" href="layui/css/layui.css"/>
-  <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
-  <script type="text/javascript" src="layui/layui.js"></script>
+  <link rel="stylesheet" type="text/css" href="/tribune/static/layui/css/layui.css"/>
+  <script type="text/javascript" src="/tribune/static/js/jquery-3.3.1.js"></script>
+  <script type="text/javascript" src="/tribune/static/layui/layui.js"></script>
 	
   <body>
     	<table id="userinfo" class="layui-table" lay-filter="demo"></table>

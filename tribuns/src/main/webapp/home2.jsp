@@ -11,11 +11,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <title>My JSP 'index.jsp' starting page</title>
 	
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="css/font.css">
-	<link rel="stylesheet" href="css/xadmin.css">
-    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
-    <script src="./lib/layui/layui.js" charset="utf-8"></script>
-    <script type="text/javascript" src="js/xadmin.js"></script>
+    <link rel="stylesheet" href="/tribune/static/css/font.css">
+	<link rel="stylesheet" href="/tribune/static/css/xadmin.css">
+    <script type="text/javascript" src="/tribune/static/js/jquery-3.3.1.js"></script>
+    <script src="/tribune/static/layui/layui.js" charset="utf-8"></script>
+    <script type="text/javascript" src="/tribune/static/js/xadmin.js"></script>
   </head>
   <body>
     <!-- 顶部开始 -->
@@ -52,7 +52,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                 </a>
                 <ul class="sub-menu">
                     <li>
-                        <a _href="houtai/usersmanage.jsp">
+                        <a _href="usersmanage.jsp">
                             <i class="iconfont">&#xe6a7;</i>
                             <cite>管理员列表</cite>
                         </a>
@@ -83,19 +83,19 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                 </a>
                 <ul class="sub-menu">
                     <li>
-                        <a _href="">
+                        <a _href="blogtype.jsp">
                             <i class="iconfont">&#xe6a7;</i>
                             <cite>博客类型列表</cite>
                         </a>
                     </li >
                     <li>
-                        <a _href="">
+                        <a _href="bbstype.jsp">
                             <i class="iconfont">&#xe6a7;</i>
                             <cite>论坛类型列表</cite>
                         </a>
                     </li >
                     <li>
-                        <a _href="">
+                        <a _href="downtype.jsp">
                             <i class="iconfont">&#xe6a7;</i>
                             <cite>下载类型列表</cite>
                         </a>
