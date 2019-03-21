@@ -1,6 +1,6 @@
 package com.zxh.entity;
 
-public class Downtype {
+public class Downtypezxh {
 	private Integer downtypeid;
 	private String downtypeName;
 	public Integer getDowntypeid() {

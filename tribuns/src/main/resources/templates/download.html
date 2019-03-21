@@ -1925,7 +1925,7 @@
 		<div class="container clearfix">
 			<div class="nav-bar">
 				<a th:href="@{/downfilec/queryDownFile}" class="current">下载首页</a>
-				<a th:href="@{/downfilec/myResources(userid='S111')}">我的资源</a> 
+				<a th:href="@{/downfilec/myResources(userid=${session.userintro.userId})}">我的资源</a> 
 				<a class="nav_upload  " th:href="@{/downtypec/queryTypeAll}">上传资源赚积分</a>
 				<a class=" " href="https://download.csdn.net/my/favs">我的收藏</a>
 			</div>

@@ -13,7 +13,7 @@ import org.apache.shiro.subject.PrincipalCollection;
 import org.apache.shiro.util.ByteSource;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.zxh.entity.UserInfo;
+import com.zxh.entity.UserInfozxh;
 
 public class UserinfoRealm extends AuthorizingRealm{
 	
@@ -35,7 +35,7 @@ public class UserinfoRealm extends AuthorizingRealm{
 			AuthenticationToken arg0) throws AuthenticationException {
 		// TODO Auto-generated method stub
 		UsernamePasswordToken token=(UsernamePasswordToken)arg0;
-		UserInfo user = userService.queryUserbyphone(token.getUsername());
+		UserInfozxh user = userService.queryUserbyphone(token.getUsername());
 		if (user == null) {
 		  return null;
 		}

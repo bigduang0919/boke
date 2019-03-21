@@ -8,7 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.zxh.entity.Blog;
+import com.zxh.entity.Blogzxh;
 import com.zxh.service.BlogzxhService;
 import com.zxh.util.CheckTextUtil;
 import com.zxh.util.FileConfig;
@@ -23,7 +23,7 @@ public class BlogController {
 	private FileConfig config;
 	@RequestMapping("insertblog")
 	@ResponseBody
-	public Integer insertblog(Blog blog){
+	public Integer insertblog(Blogzxh blog){
 		System.out.println(blog);
 		String content = blog.getBlogContent();
 		JSONObject check = CheckTextUtil.check(content);

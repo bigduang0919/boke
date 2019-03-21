@@ -13,6 +13,7 @@
 <link rel="stylesheet" href="/tribune/static/files/skeleton.css">
 <link rel="stylesheet" href="/tribune/static/files/content_toolbar.css">
 <link href="/tribune/static/files/app.003656b634973f9d24a324c4ad137abd.css" rel="stylesheet">
+
 <script type="text/javascript" src="/tribune/static/js/jquery-3.3.1.js"></script>
 <title>个人资料-个人中心-CSDN</title>
 </head>
@@ -172,17 +173,13 @@
 							<div data-v-0d738edb="" class="header">
 								<img data-v-0d738edb="" src="/tribune/static/files/1_sr9089" alt=""
 									class="head">
-								<p data-v-0d738edb="" class="modify">修改头像</p>
+								<p data-v-0d738edb="" class="modify" >修改头像</p>
 							</div>
 							<!---->
 							<div data-v-0d738edb="" class="right_c">
 								<div data-v-0d738edb="" class="right_info">
 									<div data-v-0d738edb="" class="id_card">
-										<span data-v-0d738edb="" class="id_name">ID：<span></span></span>
-										<!---->
-										<!---->
-										<a data-v-0d738edb="" href="https://me.csdn.net/sr9089"
-											target="_blank" class="user_home">个人主页</a>
+										<span data-v-0d738edb="" class="id_name">ID：<span th:text="${session.userintro.userId}"></span></span>
 									</div>
 								</div>
 								<div data-v-0d738edb="" class="csdn_info">
@@ -197,25 +194,68 @@
 										class="charge">充值</a>
 								</div>
 								<div data-v-0d738edb="" class="line"></div>
+								<div id="show">
 								<div data-v-0d738edb="" class="nick">
-									<span data-v-0d738edb="">昵称：<span ></span></span> <span
-										data-v-0d738edb="" class="mod">修改资料</span>
-								</div>
+									<span data-v-0d738edb="">昵称:<span th:text=${session.userintro.nickname}></span></span> 
+									<a data-v-0d738edb="" class="mod" onclick="change()">修改资料</a>
+								</div >
 								<ul data-v-0d738edb="" class="self">
-									<!-- <li data-v-0d738edb="" class="comon">实名：<span th:text=${userinfo.realName}></span></li>
-									<li data-v-0d738edb="" class="comon">性别：<span th:text="${userinfo.sex}==0?'男':'女'"></span></li>
-									<li data-v-0d738edb="" class="comon">生日：<span th:text="${#dates.format(userinfo.birthday, 'yyyy-MM-dd HH:mm')}"></span></li>
-									<li data-v-0d738edb="" class="comon">地区：<span th:text=${userinfo.nickname}></span></li>
-									<li data-v-0d738edb="" class="comon">行业：<span th:text=${userinfo.nickname}></span></li>
-									<li data-v-0d738edb="" class="comon last">职位：<span th:text=${userinfo.curjob}></span></li>
+									 <li data-v-0d738edb="" class="comon">实名：<span th:text=${session.userintro.realName}></span></li>
+									<li data-v-0d738edb="" class="comon">性别：<span th:text="${session.userintro.sex}==0?'男':'女'"></span></li>
+									<li data-v-0d738edb="" class="comon">生日：<span th:text="${#dates.format(session.userintro.birthday, 'yyyy-MM-dd HH:mm')}"></span></li>
+									<li data-v-0d738edb="" class="comon">行业：<span th:text=${session.userintro.nickname}></span></li>
+									<li data-v-0d738edb="" class="comon last">职位：<span th:text=${session.userintro.curjob}></span></li>
 									<li data-v-0d738edb="" class="intro"><span
-										data-v-0d738edb="" class="noWid">简介：<span th:text=${userinfo.selfdesc}></span></span><span
-										data-v-0d738edb="" class="cont"></span></li> -->
+										data-v-0d738edb="" class="noWid">简介：<span th:text=${session.userintro.selfdesc}></span></span><span
+										data-v-0d738edb="" class="cont"></span></li> 
 								</ul>
+								</div>
+								<div id="userform" style="display:none">
+									  <form class="" style="width:250px; margin-top:20px">
+										<div class="form-group" style=" margin-top:5px">
+											<label for="exampleInputEmail1">昵称</label> <input
+												type="text" class="form-control" id="exampleInputEmail1"
+												>
+										</div>
+										
+										<div class="form-group" style=" margin-top:10px">
+											<label for="exampleInputEmail1">实名</label> <input
+												type="text" class="form-control" id="exampleInputEmail1"
+												placeholder="">
+										</div>
+										<div class="form-group" style=" margin-top:10px">
+											<label for="exampleInputEmail1">性别</label> 
+											<select class="form-control" style="width:155px">
+												<option>男</option>
+												<option>女</option>
+											</select>
+										</div>
+										<div class="form-group" style=" margin-top:10px">
+											<label for="exampleInputEmail1">生日</label> 
+											<input
+												type="text" class="form-control" id="exampleInputEmail1"
+												placeholder="">
+										</div>
+										<div class="form-group" style=" margin-top:10px">
+											<label for="exampleInputEmail1">职位</label> 
+											<input
+												type="text" class="form-control" id="exampleInputEmail1"
+												placeholder="">
+										</div>
+										<div class="form-group" style=" margin-top:10px">
+											<label for="exampleInputEmail1">简介</label> 
+											<textarea class="form-control" rows="3"></textarea>
+										</div>
+										<div>
+											<button>确定修改</button>
+											<button onclick="change(2)">取消</button>
+										</div>
+									  </form>
+								</div>
 							</div>
 						</div>
 					</div>
-					<!-- <div data-v-0d738edb="" class="modi_dialog">
+					<div data-v-0d738edb="" class="modi_dialog" style="display:none">
 						<div data-v-0d738edb="" class="vue-image-crop-upload">
 							<div data-action="vicp-wrap" class="vicp-wrap">
 								<div class="vicp-close">
@@ -223,7 +263,7 @@
 								</div>
 								<h3 data-action="vicp-wrap" class="upword">上传头像</h3>
 								<h3 data-action="vicp-wrap" class="upword"
-									style="display: none;">修改头像</h3>
+									style="display: none;" >修改头像</h3>
 								<div class="vicp-step1">
 									<div class="vicp-drop-area">
 										<img
@@ -243,6 +283,7 @@
 					</div>
 					<!---->
 				</div>
+				
 			</div>
 			<div data-v-357a65ed="" class="view-container" style="display:none" id="wdsc">
 				<div data-v-0d738edb="" data-v-357a65ed="" class="cont view">
@@ -276,6 +317,7 @@
 			</div>
 		</div>
 	</div>
+	
 	<script type="text/javascript">
 		function show(obj){
 			//$(this).parent("li").attr("class","router-link-exact-active router-link-active");
@@ -301,6 +343,16 @@
 				$("#wdgz").hide();
 				$("#wdfs").show();
 			}
+		}
+		function change(obj){
+			if(obj==2){
+				$("#show").show();
+				$("#userform").hide();
+			}else{
+				$("#show").hide();
+				$("#userform").show();
+			}
+			
 		}
 	</script>
 </body>

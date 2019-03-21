@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.zxh.dao.AdminzxhDao;
-import com.zxh.entity.Admins;
+import com.zxh.entity.Adminszxh;
 
 
 
@@ -16,7 +16,7 @@ public class AdminzxhService {
 	@Autowired(required=true)
 	AdminzxhDao userdao;
 	
-	public List<Admins> login(Admins admin){
+	public List<Adminszxh> login(Adminszxh admin){
 		return userdao.login(admin);
 	}
 }

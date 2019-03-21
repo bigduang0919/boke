@@ -19,7 +19,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.zxh.entity.UserInfo;
+import com.zxh.entity.UserInfozxh;
 import com.zxh.service.UserInfozxhService;
 import com.zxh.util.SendTelMsgUtils;
 import com.zxh.util.ShiroMD5Util;
@@ -31,7 +31,7 @@ public class UserInfozxhController {
 	@RequestMapping("/queryuser")
 	@ResponseBody
 	public Map<String,Object> query(){
-		List<UserInfo> query = userinfo.queryuserinfo();
+		List<UserInfozxh> query = userinfo.queryuserinfo();
 		Map<String,Object> map=new HashMap<String, Object>();
 		map.put("data", query);
 		map.put("code",0);
@@ -41,14 +41,18 @@ public class UserInfozxhController {
 	}
 	
 	@RequestMapping("/userlogin")
-	@ResponseBody
-	public Integer login(UserInfo userinfo,HttpSession session){
+	@ResponseBody 
+	public Integer login(UserInfozxh user,HttpSession session){
 		Subject subject =SecurityUtils.getSubject();
+		UserInfozxh i = userinfo.login(user);
+		System.out.println(i);
+		session.setAttribute("userintro", i);
 		//封装用户数据
-		UsernamePasswordToken token=new UsernamePasswordToken(userinfo.getPhone(),userinfo.getUsepwd());
+		UsernamePasswordToken token=new UsernamePasswordToken(user.getPhone(),user.getUsepwd());
 		try {
 			subject.login(token);
-			//ses
+			
+			//
 			//登录成功
 		} catch (UnknownAccountException e) {
 			// TODO Auto-generated catch block
@@ -64,7 +68,7 @@ public class UserInfozxhController {
 	}
 	@RequestMapping("/userReg")
 	@ResponseBody
-	public Integer register(UserInfo user){
+	public Integer register(UserInfozxh user){
 		user.setUsepwd(ShiroMD5Util.SysMd5(user));
 		System.out.println(user.getUsepwd());
 		Integer i = userinfo.register(user);
@@ -77,4 +81,5 @@ public class UserInfozxhController {
 		String result = SendTelMsgUtils.sendMsgToPhone(phone);
 		return result;
 	}
+	
 }

@@ -4,8 +4,8 @@ import java.util.List;
 
 import org.apache.ibatis.annotations.Mapper;
 
-import com.zxh.entity.Downtype;
+import com.zxh.entity.Downtypezxh;
 @Mapper
 public interface DownTypezxhDao {
-	public List<Downtype> querydowntype();
+	public List<Downtypezxh> querydowntype();
 }

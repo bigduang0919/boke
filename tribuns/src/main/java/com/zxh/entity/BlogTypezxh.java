@@ -1,6 +1,6 @@
 package com.zxh.entity;
 
-public class BlogType {
+public class BlogTypezxh {
 	private Integer	typeid;
 	private String typeName;
 	public Integer getTypeid() {
@@ -15,12 +15,12 @@ public class BlogType {
 	public void setTypeName(String typeName) {
 		this.typeName = typeName;
 	}
-	public BlogType(Integer typeid, String typeName) {
+	public BlogTypezxh(Integer typeid, String typeName) {
 		super();
 		this.typeid = typeid;
 		this.typeName = typeName;
 	}
-	public BlogType() {
+	public BlogTypezxh() {
 		super();
 	}
 	@Override

@@ -1,6 +1,6 @@
 package com.zxh.entity;
 
-public class Admins {
+public class Adminszxh {
 	private Integer adminid;
 	private String adminName;
 	private String adminPwd;

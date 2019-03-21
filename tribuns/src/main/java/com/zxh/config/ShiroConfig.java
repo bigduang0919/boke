@@ -27,6 +27,7 @@ public class ShiroConfig {
 		// roles 必须得到角色权限才可访问
 		Map<String,String> filterChainDefinitionMap=new LinkedHashMap<String,String>();
 		//filterChainDefinitionMap.put("/write", "authc");
+		filterChainDefinitionMap.put("/person", "authc");
 		filterChainDefinitionMap.put("/static/**", "anon");
 		filterChainDefinitionMap.put("/zxhuserinfo/userlogin", "anon");
 		shiroFilterFactoryBean.setFilterChainDefinitionMap(filterChainDefinitionMap);

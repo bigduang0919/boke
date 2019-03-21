@@ -4,9 +4,9 @@ import java.util.List;
 
 import org.apache.ibatis.annotations.Mapper;
 
-import com.zxh.entity.Admins;
+import com.zxh.entity.Adminszxh;
 @Mapper
 public interface AdminzxhDao {
-	public List<Admins> login(Admins admin);
+	public List<Adminszxh> login(Adminszxh admin);
 }
  

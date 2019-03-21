@@ -2,7 +2,7 @@ package com.zxh.entity;
 
 import java.util.Date;
 
-public class Blog {
+public class Blogzxh {
 	private Integer blogId;
 	private String blogTitle;
 	private String blogContent;

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd" >
 <mapper namespace="com.zxh.dao.UserInfozxhDao">
-  	<select id="queryUserInfo" resultType="com.zxh.entity.UserInfo">
+  	<select id="queryUserInfo" resultType="com.zxh.entity.UserInfozxh">
   		select * from userinfo
   	</select>
-  	<select id="queryUserbyphone" resultType="com.zxh.entity.UserInfo">
+  	<select id="queryUserbyphone" resultType="com.zxh.entity.UserInfozxh">
   		select * from userinfo where phone=#{phone}
   	</select>
-  	<insert id="register" parameterType="com.zxh.entity.UserInfo">
+  	<insert id="register" parameterType="com.zxh.entity.UserInfozxh">
 		insert into userinfo
 		<trim prefix="(" suffix=")" suffixOverrides="," >
 			<if test="userId !=null">
@@ -36,4 +36,7 @@
 			</if>
 		</trim>
   	</insert>
+  	<select id="login" parameterType="com.zxh.entity.UserInfozxh" resultType="com.zxh.entity.UserInfozxh">
+  		select * from userinfo where phone=#{phone}
+  	</select>
 </mapper>

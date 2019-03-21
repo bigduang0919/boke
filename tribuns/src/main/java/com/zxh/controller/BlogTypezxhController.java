@@ -10,7 +10,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.zxh.entity.BlogType;
+import com.zxh.entity.BlogTypezxh;
 import com.zxh.service.BlogTypezxhService;
 
 @Controller
@@ -21,8 +21,8 @@ public class BlogTypezxhController {
 	
 	@RequestMapping("querytype")
 	@ResponseBody
-	public List<BlogType> query(){
-		List<BlogType> listtype = blogtypeservice.queryblogtype();
+	public List<BlogTypezxh> query(){
+		List<BlogTypezxh> listtype = blogtypeservice.queryblogtype();
 		return listtype;
 	}
 	
@@ -30,7 +30,7 @@ public class BlogTypezxhController {
 	@ResponseBody
 	public Map<String,Object> blogtype(){
 		Map<String,Object> map=new HashMap<String,Object>();
-		List<BlogType> listtype = blogtypeservice.queryblogtype();
+		List<BlogTypezxh> listtype = blogtypeservice.queryblogtype();
 		map.put("data", listtype);
 		map.put("count", listtype.size());
 		map.put("msg", "");

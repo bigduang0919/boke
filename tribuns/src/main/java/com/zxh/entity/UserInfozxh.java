@@ -2,7 +2,7 @@ package com.zxh.entity;
 
 import java.util.Date;
 
-public class UserInfo {
+public class UserInfozxh {
 	private String	userId;
 	private String nickname;
 	private String realName;
@@ -72,6 +72,14 @@ public class UserInfo {
 	}
 	public void setPic(String pic) {
 		this.pic = pic;
+	}
+	@Override
+	public String toString() {
+		return "UserInfozxh [userId=" + userId + ", nickname=" + nickname
+				+ ", realName=" + realName + ", phone=" + phone + ", usepwd="
+				+ usepwd + ", sex=" + sex + ", birthday=" + birthday
+				+ ", curjob=" + curjob + ", selfdesc=" + selfdesc + ", pic="
+				+ pic + "]";
 	}
 	
 

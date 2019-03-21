@@ -20,12 +20,15 @@ public class WriteController {
 	public String ww555(Model model,Integer blogid){
 		String path="E://files//txtinfo";
 		String a=FileUtils.readFile(path+"/41768864_qtx_39019.txt");
-		model.addAttribute("s", a);
+		model.addAttribute("s", a);   
 		return "readfile";
 	}
 	@RequestMapping("person")
 	public String person(){
 		return "personal";
 	}
-	
+	@RequestMapping("test2")
+	public String test(){
+		return "text";
+	}
 }
