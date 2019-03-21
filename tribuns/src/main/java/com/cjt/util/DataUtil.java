@@ -11,7 +11,7 @@ public class DataUtil {
 	/**
 	 * 获取某个日期的年份
 	 * @param date
-	 * @return
+	 * @return   555555
 	 */
 	public static Integer getYear(Date date) {  
         Calendar cal = Calendar.getInstance();  
@@ -140,6 +140,11 @@ public class DataUtil {
 		long between = (time1.getTime() - time2.getTime())/1000;
 		long min = between/60;
 		return Math.abs((int) min);
+	}
+	
+	public static String test(){
+		System.out.println(111);
+		return "111";
 	}
 }
 
